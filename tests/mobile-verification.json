@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "single-finger orbit",
+    "two-finger zoom",
+    "touch return to walk",
+    "mobile architecture layout",
+    "mobile materials layout",
+    "mobile joinery layout",
+    "mobile rooms layout"
+  ],
+  "errors": [],
+  "status": "passed"
+}

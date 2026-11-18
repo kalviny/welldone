@@ -1,0 +1,21 @@
+# Local visual iteration files and reference images
+/.dream-loop/
+
+# Separate skill checkout and its local research notes
+/Skills/
+/notes/mengto-skills/
+
+# Reproducible delivery archives and browser screenshots
+/*.zip
+/tests/*.png
+/tests/*.jpg
+/tests/*.jpeg
+
+# Local environment and tooling
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/

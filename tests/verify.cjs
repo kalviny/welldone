@@ -1,0 +1,49 @@
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'/Users/zhanghong1/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs'),assert=require('assert/strict');
+const base=process.env.TEST_URL||'http://127.0.0.1:4173/';
+const report={url:base,checks:[],errors:[],warnings:[],requests:[],screenshots:[]};
+function check(name,value,detail){report.checks.push({name,passed:!!value,detail});if(!value)throw Error(`${name}: ${JSON.stringify(detail)}`);}
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--enable-webgl','--use-angle=metal']});
+ try{
+ const page=await browser.newPage({viewport:{width:1440,height:960},deviceScaleFactor:1});
+ page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());if(m.type()==='warning')report.warnings.push(m.text());});
+ page.on('response',r=>{if(r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);report.requests.push(r.url());});
+ const start=Date.now();await page.goto(base);await page.waitForFunction(()=>window.castle?.state.ready,{timeout:120000});
+ check('scene ready',true,{milliseconds:Date.now()-start,stats:await page.evaluate(()=>castle.stats())});
+ check('below-fold WebP not requested initially',!report.requests.some(u=>/\/assets\/(garden-|tea-\d|study-\d|lookout-\d)/.test(u)));
+ await page.waitForTimeout(500);await page.screenshot({path:'tests/desktop.png'});report.screenshots.push('desktop.png');
+ check('desktop no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ const audit=await page.evaluate(()=>castle.audit());check('2401 route positions clear solid walls and posts',audit.collisions.length===0,{samples:audit.samples,collisions:audit.collisions.slice(0,5)});
+ const floorAudit=await page.evaluate(async()=>{const THREE=await import('./vendor/three.module.js');castle.world.scene.updateMatrixWorld(true);const ray=new THREE.Raycaster(),bad=[];const roots=castle.world.root.children.filter(o=>o.isMesh&&!o.material?.transparent&&o.material?.type!=='ShaderMaterial');for(let i=0;i<=200;i++){const p=castle.route.sample(i/200).position;ray.set(p,new THREE.Vector3(0,-1,0));ray.far=8;const hits=ray.intersectObjects(roots,true).filter(h=>h.object.visible);const d=hits[0]?.distance;if(d===undefined||d>2.15||d<1.05)bad.push({p:i/200,clearance:d,position:p.toArray()});}return bad;});
+ report.floorAudit=floorAudit;check('route has continuous walkable support',floorAudit.length===0,floorAudit);
+ // Exercise every shared jump anchor through visible chapter buttons.
+ const anchors=await page.evaluate(()=>castle.route.anchors.map(a=>({id:a.id,progress:a.progress})));
+ for(const a of anchors){await page.locator(`#chapter-dots [data-jump="${a.id}"]`).click();await page.waitForFunction(p=>Math.abs(castle.progress-p)<.0006,a.progress,{timeout:10000});const camera=await page.evaluate(()=>({pos:castle.camera.position.toArray(),mode:castle.mode,scroll:scrollY,title:document.querySelector('#location-title').textContent}));check(`jump ${a.id}`,camera.mode==='walk'&&camera.pos.every(Number.isFinite),camera);}
+ await page.evaluate(()=>castle.jump('tea',{instant:true}));await page.waitForTimeout(100);const before=await page.evaluate(()=>({progress:castle.progress,pos:castle.camera.position.toArray(),scroll:scrollY}));
+ await page.locator('#inspect').click();check('inspection entered',await page.evaluate(()=>castle.mode==='inspect'&&document.body.style.overflow==='hidden'));
+ await page.mouse.move(950,420);await page.mouse.down();await page.mouse.move(1090,490,{steps:8});await page.mouse.up();await page.mouse.wheel(0,-280);await page.waitForTimeout(350);
+ const inspected=await page.evaluate(()=>castle.camera.position.toArray());check('orbit/zoom changes camera',inspected.some((x,i)=>Math.abs(x-before.pos[i])>.1));
+ await page.locator('#return-walk').click();await page.waitForFunction(()=>castle.mode==='walk');await page.waitForTimeout(100);const restored=await page.evaluate(()=>({progress:castle.progress,pos:castle.camera.position.toArray(),scroll:scrollY,roofs:castle.world.roofs.every(o=>o.visible)}));check('inspection returns to saved pose and scroll',Math.abs(before.progress-restored.progress)<.0001&&before.pos.every((x,i)=>Math.abs(x-restored.pos[i])<.02)&&Math.abs(before.scroll-restored.scroll)<2&&restored.roofs,restored);
+ // Native dialog, floors and map navigation.
+ await page.locator('.site-header .map-toggle').click();await page.locator('[data-floor="2"]').click();check('floor 2 map',await page.locator('[data-floor="2"]').getAttribute('aria-selected')==='true');await page.locator('#floor-plan [data-jump="upper"]').click();await page.waitForFunction(()=>document.querySelector('#location-title').textContent.includes('上层'));check('map closes after navigation',await page.evaluate(()=>!document.querySelector('#map-dialog').open));
+ await page.waitForFunction(()=>Math.abs(castle.progress-castle.route.anchor('upper').progress)<.0001 && Math.abs(castle.progress-castle.desired)<.000001);
+ const poses=[];for(const s of['spring','summer','autumn','winter']){await page.locator(`.season-control [data-season="${s}"]`).click();poses.push(await page.evaluate(()=>({season:castle.state.season,pos:castle.camera.position.toArray(),color:castle.world.m.leaf.color.getHex()})));}check('all four seasons update materials',new Set(poses.map(p=>p.color)).size===4,poses);check('season keeps camera pose',poses.every(p=>p.pos.every((x,i)=>Math.abs(x-poses[0].pos[i])<.02)));
+ await page.locator('.season-control [data-season="autumn"]').click();
+ // Check intermediate states of each material, including the zoom and handoff.
+ const materials=[];for(const fraction of [.02,.17,.24,.27,.42,.52,.67,.77,.92]){await page.evaluate(f=>{const e=document.querySelector('#materials');scrollTo({top:e.offsetTop+f*(e.offsetHeight-innerHeight),behavior:'instant'});},fraction);await page.waitForTimeout(100);materials.push(await page.evaluate(()=>({...castle.state.material,title:document.querySelector('#material-title').textContent})));}check('four materials shown',new Set(materials.map(m=>m.index)).size===4,materials);check('material push-in is scroll driven',materials[1].zoom>materials[0].zoom+.5,materials.slice(0,2));await page.screenshot({path:'tests/materials.png'});
+ await page.evaluate(()=>{const e=document.querySelector('#joinery');scrollTo({top:e.offsetTop+(e.offsetHeight-innerHeight)*.5,behavior:'instant'});});await page.waitForTimeout(500);check('joinery WebGL initialized on demand',await page.locator('#joinery-scene canvas').count()===1);await page.screenshot({path:'tests/joinery.png'});
+ // Pause render work while the main scene is offscreen.
+ const frames=await page.evaluate(()=>castle.renderer.info.render.frame);await page.waitForTimeout(400);check('offscreen main renderer is paused',await page.evaluate(()=>castle.renderer.info.render.frame)===frames);
+ await page.locator('#gardens').scrollIntoViewIfNeeded();await page.waitForTimeout(500);check('garden lazy image loaded when approached',await page.locator('#garden-image').evaluate(img=>img.complete&&img.naturalWidth>0));await page.screenshot({path:'tests/gardens.png'});
+ await page.locator('#rooms').scrollIntoViewIfNeeded();await page.waitForTimeout(500);check('room lazy images load',await page.locator('.room-image img').evaluateAll(imgs=>imgs.every(i=>i.complete&&i.naturalWidth>0)));await page.screenshot({path:'tests/rooms.png'});
+ await page.locator('.room-card[data-jump="study"]').click();await page.waitForFunction(()=>Math.abs(castle.progress-castle.route.anchor('study').progress)<.0006);check('room card returns to matching view',await page.evaluate(()=>Math.abs(castle.progress-castle.route.anchor('study').progress)<.002));
+ // Tall viewport, same live WebGL implementation.
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>castle.jump('approach',{instant:true}));await page.waitForTimeout(400);await page.screenshot({path:'tests/mobile.png'});check('narrow no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ check('mobile primary controls fit viewport',await page.locator('#inspect').evaluate(e=>{const b=e.getBoundingClientRect();return b.left>=0&&b.right<=innerWidth&&b.bottom<=innerHeight;}));
+ await page.locator('.site-header .map-toggle').click();await page.screenshot({path:'tests/mobile-map.png'});check('mobile map fits',await page.locator('#map-dialog').evaluate(e=>e.getBoundingClientRect().width<=innerWidth));await page.locator('#floor-plan [data-jump="tea"]').click();await page.waitForFunction(()=>document.querySelector('#location-title').textContent.includes('茶室'));await page.locator('#inspect').click();await page.locator('#return-walk').click();await page.waitForFunction(()=>castle.mode==='walk');check('narrow inspection return',true);
+ await page.locator('#gardens').scrollIntoViewIfNeeded();await page.waitForTimeout(500);await page.screenshot({path:'tests/mobile-gardens.png'});const image=await page.locator('#garden-image').evaluate(e=>({source:e.currentSrc,natural:e.naturalWidth,box:e.getBoundingClientRect().toJSON(),sizes:e.sizes}));check('portrait crop requests a larger image',/225vw/.test(image.sizes)&&/960|1600/.test(image.source),image);
+ check('no console or network errors',report.errors.length===0,report.errors);
+ report.status='passed';
+ }finally{await browser.close();fs.writeFileSync('tests/verification.json',JSON.stringify(report,null,2));console.log(JSON.stringify({status:report.status||'failed',checks:report.checks.length,errors:report.errors,warnings:report.warnings},null,2));}
+})().catch(e=>{console.error(e);process.exit(1);});

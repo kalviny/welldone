@@ -1,0 +1,108 @@
+{
+  "errors": [],
+  "views": [
+    {
+      "id": "approach",
+      "stats": {
+        "calls": 196,
+        "triangles": 602392,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "bridge",
+      "stats": {
+        "calls": 192,
+        "triangles": 602136,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "gate",
+      "stats": {
+        "calls": 179,
+        "triangles": 579532,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "forecourt",
+      "stats": {
+        "calls": 130,
+        "triangles": 540932,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "tea",
+      "stats": {
+        "calls": 74,
+        "triangles": 267806,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "garden",
+      "stats": {
+        "calls": 101,
+        "triangles": 518344,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "study",
+      "stats": {
+        "calls": 38,
+        "triangles": 224304,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "armory",
+      "stats": {
+        "calls": 35,
+        "triangles": 228780,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "stairs",
+      "stats": {
+        "calls": 36,
+        "triangles": 238362,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "id": "lookout",
+      "stats": {
+        "calls": 64,
+        "triangles": 286568,
+        "geometries": 358,
+        "textures": 24
+      }
+    },
+    {
+      "width": 1440,
+      "fps": 59.99999999999999,
+      "p95": 16.800000000000182,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "fps": 60.00400026668446,
+      "p95": 16.800000000000182,
+      "overflow": false
+    }
+  ],
+  "status": "passed"
+}

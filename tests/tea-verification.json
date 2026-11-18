@@ -1,0 +1,43 @@
+{
+  "checks": [
+    "opening does not request tea material maps",
+    "lazy tea maps load under repository subpath",
+    "desktop live framebuffer is nonblank",
+    "desktop orbit returns to exact tea pose",
+    "desktop no horizontal overflow",
+    "narrow live framebuffer is nonblank",
+    "narrow orbit returns to exact tea pose",
+    "narrow no horizontal overflow",
+    "tea texture loads are cached"
+  ],
+  "errors": [],
+  "metrics": [
+    {
+      "label": "desktop",
+      "width": 1672,
+      "height": 941,
+      "fps": 60.00400026668444,
+      "p95": 16.700000000000273,
+      "stats": {
+        "calls": 74,
+        "triangles": 142578,
+        "geometries": 372,
+        "textures": 24
+      }
+    },
+    {
+      "label": "narrow",
+      "width": 390,
+      "height": 844,
+      "fps": 60.00400026668446,
+      "p95": 16.700000000000728,
+      "stats": {
+        "calls": 64,
+        "triangles": 110216,
+        "geometries": 372,
+        "textures": 24
+      }
+    }
+  ],
+  "status": "passed"
+}

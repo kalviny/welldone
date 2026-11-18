@@ -1,0 +1,502 @@
+{
+  "url": "http://127.0.0.1:4174/welldone/",
+  "checks": [
+    {
+      "name": "scene ready",
+      "passed": true,
+      "detail": {
+        "milliseconds": 1101,
+        "stats": {
+          "calls": 320,
+          "triangles": 2630290,
+          "geometries": 369,
+          "textures": 17
+        }
+      }
+    },
+    {
+      "name": "below-fold WebP not requested initially",
+      "passed": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "2401 route positions clear solid walls and posts",
+      "passed": true,
+      "detail": {
+        "samples": 2401,
+        "collisions": []
+      }
+    },
+    {
+      "name": "route has continuous walkable support",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "jump approach",
+      "passed": true,
+      "detail": {
+        "pos": [
+          38,
+          23.65,
+          68
+        ],
+        "mode": "walk",
+        "scroll": 0,
+        "title": "山路 · The approach"
+      }
+    },
+    {
+      "name": "jump bridge",
+      "passed": true,
+      "detail": {
+        "pos": [
+          -0.0018968409438042677,
+          5.6494309477168585,
+          36.09888999772759
+        ],
+        "mode": "walk",
+        "scroll": 2763,
+        "title": "木桥 · The bridge"
+      }
+    },
+    {
+      "name": "jump gate",
+      "passed": true,
+      "detail": {
+        "pos": [
+          0,
+          5.65,
+          29.11336944053612
+        ],
+        "mode": "walk",
+        "scroll": 3108,
+        "title": "城门 · The gate"
+      }
+    },
+    {
+      "name": "jump guard",
+      "passed": true,
+      "detail": {
+        "pos": [
+          -4.897796972431549,
+          5.65,
+          24.008797979421093
+        ],
+        "mode": "walk",
+        "scroll": 3601,
+        "title": "守卫室 · The guard room"
+      }
+    },
+    {
+      "name": "jump forecourt",
+      "passed": true,
+      "detail": {
+        "pos": [
+          0.001551784271897838,
+          5.65,
+          16.109533783967898
+        ],
+        "mode": "walk",
+        "scroll": 4162,
+        "title": "前庭 · The forecourt"
+      }
+    },
+    {
+      "name": "jump entrance",
+      "passed": true,
+      "detail": {
+        "pos": [
+          0,
+          6.811023798741037,
+          10.50402507168771
+        ],
+        "mode": "walk",
+        "scroll": 4451,
+        "title": "主殿 · The main hall"
+      }
+    },
+    {
+      "name": "jump corridor",
+      "passed": true,
+      "detail": {
+        "pos": [
+          -6.897950362988929,
+          6.85,
+          7.011425238802646
+        ],
+        "mode": "walk",
+        "scroll": 4963,
+        "title": "主回廊 · The timber corridor"
+      }
+    },
+    {
+      "name": "jump tea",
+      "passed": true,
+      "detail": {
+        "pos": [
+          -6.64066640371588,
+          6.504117860710643,
+          -3.098080553107806
+        ],
+        "mode": "walk",
+        "scroll": 5516,
+        "title": "茶室 · The tea room"
+      }
+    },
+    {
+      "name": "jump garden",
+      "passed": true,
+      "detail": {
+        "pos": [
+          -4.079329357146865,
+          6.850246659373475,
+          0.06327381536716703
+        ],
+        "mode": "walk",
+        "scroll": 5796,
+        "title": "中庭 · The inner garden"
+      }
+    },
+    {
+      "name": "jump study",
+      "passed": true,
+      "detail": {
+        "pos": [
+          8.91285294709538,
+          6.85,
+          -5.059951897125419
+        ],
+        "mode": "walk",
+        "scroll": 7057,
+        "title": "书斋 · The study"
+      }
+    },
+    {
+      "name": "jump armory",
+      "passed": true,
+      "detail": {
+        "pos": [
+          10.00045385299812,
+          6.85,
+          -11.890522442171797
+        ],
+        "mode": "walk",
+        "scroll": 7410,
+        "title": "兵具间 · The armory"
+      }
+    },
+    {
+      "name": "jump stairs",
+      "passed": true,
+      "detail": {
+        "pos": [
+          4.9078684229138405,
+          6.85,
+          -15.996531403700116
+        ],
+        "mode": "walk",
+        "scroll": 7863,
+        "title": "天守楼梯 · The ascent"
+      }
+    },
+    {
+      "name": "jump upper",
+      "passed": true,
+      "detail": {
+        "pos": [
+          4.818739995689866,
+          11.986054297151439,
+          -23.914144733702557
+        ],
+        "mode": "walk",
+        "scroll": 8343,
+        "title": "上层回廊 · The upper gallery"
+      }
+    },
+    {
+      "name": "jump lookout",
+      "passed": true,
+      "detail": {
+        "pos": [
+          0.7657021944284371,
+          17.25,
+          -14.906134594127593
+        ],
+        "mode": "walk",
+        "scroll": 9600,
+        "title": "望楼 · The lookout"
+      }
+    },
+    {
+      "name": "inspection entered",
+      "passed": true
+    },
+    {
+      "name": "orbit/zoom changes camera",
+      "passed": true
+    },
+    {
+      "name": "inspection returns to saved pose and scroll",
+      "passed": true,
+      "detail": {
+        "progress": 0.5745833333333333,
+        "pos": [
+          -6.5992613846114265,
+          6.50001286768876,
+          -3.201011086234982
+        ],
+        "scroll": 5516,
+        "roofs": true
+      }
+    },
+    {
+      "name": "floor 2 map",
+      "passed": true
+    },
+    {
+      "name": "map closes after navigation",
+      "passed": true
+    },
+    {
+      "name": "all four seasons update materials",
+      "passed": true,
+      "detail": [
+        {
+          "season": "spring",
+          "pos": [
+            4.803289730006332,
+            12.045288608628383,
+            -23.993663770157035
+          ],
+          "color": 14464173
+        },
+        {
+          "season": "summer",
+          "pos": [
+            4.803289730006332,
+            12.045288608628383,
+            -23.993663770157035
+          ],
+          "color": 7508318
+        },
+        {
+          "season": "autumn",
+          "pos": [
+            4.803289730006332,
+            12.045288608628383,
+            -23.993663770157035
+          ],
+          "color": 13866854
+        },
+        {
+          "season": "winter",
+          "pos": [
+            4.803289730006332,
+            12.045288608628383,
+            -23.993663770157035
+          ],
+          "color": 11843752
+        }
+      ]
+    },
+    {
+      "name": "season keeps camera pose",
+      "passed": true
+    },
+    {
+      "name": "four materials shown",
+      "passed": true,
+      "detail": [
+        {
+          "index": 0,
+          "local": 0.08052765376984126,
+          "zoom": 0,
+          "title": "木有年轮，也有记忆。"
+        },
+        {
+          "index": 0,
+          "local": 0.6797340029761905,
+          "zoom": 0.8696111152199318,
+          "title": "木有年轮，也有记忆。"
+        },
+        {
+          "index": 0,
+          "local": 0.9604879712301587,
+          "zoom": 1,
+          "title": "木有年轮，也有记忆。"
+        },
+        {
+          "index": 1,
+          "local": 0.08052765376984117,
+          "zoom": 0,
+          "title": "把日光，轻轻接住。"
+        },
+        {
+          "index": 1,
+          "local": 0.6797340029761905,
+          "zoom": 0.8696111152199318,
+          "title": "把日光，轻轻接住。"
+        },
+        {
+          "index": 2,
+          "local": 0.08052765376984139,
+          "zoom": 0,
+          "title": "层层叠叠，听过雨声。"
+        },
+        {
+          "index": 2,
+          "local": 0.6797340029761907,
+          "zoom": 0.8696111152199323,
+          "title": "层层叠叠，听过雨声。"
+        },
+        {
+          "index": 3,
+          "local": 0.08052765376984139,
+          "zoom": 0,
+          "title": "石头记得，山的形状。"
+        },
+        {
+          "index": 3,
+          "local": 0.6797340029761907,
+          "zoom": 0.8696111152199323,
+          "title": "石头记得，山的形状。"
+        }
+      ]
+    },
+    {
+      "name": "material push-in is scroll driven",
+      "passed": true,
+      "detail": [
+        {
+          "index": 0,
+          "local": 0.08052765376984126,
+          "zoom": 0,
+          "title": "木有年轮，也有记忆。"
+        },
+        {
+          "index": 0,
+          "local": 0.6797340029761905,
+          "zoom": 0.8696111152199318,
+          "title": "木有年轮，也有记忆。"
+        }
+      ]
+    },
+    {
+      "name": "joinery WebGL initialized on demand",
+      "passed": true
+    },
+    {
+      "name": "offscreen main renderer is paused",
+      "passed": true
+    },
+    {
+      "name": "garden lazy image loaded when approached",
+      "passed": true
+    },
+    {
+      "name": "room lazy images load",
+      "passed": true
+    },
+    {
+      "name": "room card returns to matching view",
+      "passed": true
+    },
+    {
+      "name": "narrow no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile primary controls fit viewport",
+      "passed": true
+    },
+    {
+      "name": "mobile map fits",
+      "passed": true
+    },
+    {
+      "name": "narrow inspection return",
+      "passed": true
+    },
+    {
+      "name": "portrait crop requests a larger image",
+      "passed": true,
+      "detail": {
+        "source": "http://127.0.0.1:4174/welldone/assets/garden-autumn-1600.webp",
+        "natural": 877,
+        "box": {
+          "x": 0.796875,
+          "y": 308.359375,
+          "width": 388.40625,
+          "height": 486,
+          "top": 308.359375,
+          "right": 389.203125,
+          "bottom": 794.359375,
+          "left": 0.796875
+        },
+        "sizes": "(max-width:700px) 225vw, 90vw"
+      }
+    },
+    {
+      "name": "no console or network errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "requests": [
+    "http://127.0.0.1:4174/welldone/",
+    "http://127.0.0.1:4174/welldone/assets/emblem.svg",
+    "http://127.0.0.1:4174/welldone/style.css",
+    "http://127.0.0.1:4174/welldone/js/main.js",
+    "http://127.0.0.1:4174/welldone/js/paint.js",
+    "http://127.0.0.1:4174/welldone/assets/paint/page.webp",
+    "http://127.0.0.1:4174/welldone/vendor/OrbitControls.js",
+    "http://127.0.0.1:4174/welldone/js/route.js",
+    "http://127.0.0.1:4174/welldone/js/config.js",
+    "http://127.0.0.1:4174/welldone/js/world.js",
+    "http://127.0.0.1:4174/welldone/js/paint-palette.js",
+    "http://127.0.0.1:4174/welldone/js/watercolor-pass.js",
+    "http://127.0.0.1:4174/welldone/js/textures.js",
+    "http://127.0.0.1:4174/welldone/vendor/three.module.js",
+    "http://127.0.0.1:4174/welldone/vendor/Reflector.js",
+    "http://127.0.0.1:4174/welldone/js/tea-room.js",
+    "http://127.0.0.1:4174/welldone/assets/paint/plaster.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/wood.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/roof.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/stone.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/foliage.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/wash.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/mountain.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/water.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/paper.webp",
+    "http://127.0.0.1:4174/welldone/assets/paint/cloud.webp",
+    "http://127.0.0.1:4174/welldone/assets/emblem.svg",
+    "http://127.0.0.1:4174/welldone/assets/tea/plaster.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/table-top.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/cedar.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/table-edge.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/shoji-paper.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/tatami.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/sage-cloth.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/blue-slate.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/ceramic.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/olive-canopy.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/footing.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea/paper-tooth.webp",
+    "http://127.0.0.1:4174/welldone/assets/garden-autumn-1600.webp",
+    "http://127.0.0.1:4174/welldone/js/joinery.js",
+    "http://127.0.0.1:4174/welldone/assets/study-640.webp",
+    "http://127.0.0.1:4174/welldone/assets/lookout-640.webp",
+    "http://127.0.0.1:4174/welldone/assets/tea-640.webp"
+  ],
+  "screenshots": [
+    "desktop.png"
+  ],
+  "floorAudit": [],
+  "status": "passed"
+}

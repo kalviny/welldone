@@ -1,0 +1,49 @@
+{
+  "url": "http://127.0.0.1:4174/welldone/",
+  "errors": [],
+  "checks": [
+    "desktop: tea-specific textures remain lazy",
+    "desktop: below-fold images remain lazy",
+    "desktop: layout fits",
+    "desktop: real orbit and precise return",
+    "desktop: four seasons remain functional",
+    "narrow: tea-specific textures remain lazy",
+    "narrow: below-fold images remain lazy",
+    "narrow: layout fits",
+    "narrow: real orbit and precise return",
+    "narrow: four seasons remain functional"
+  ],
+  "metrics": [
+    {
+      "label": "desktop",
+      "width": 1672,
+      "height": 941,
+      "dpr": 1,
+      "readyMs": 1383,
+      "fps": 59.99999999999999,
+      "p95": 16.799999999999727,
+      "stats": {
+        "calls": 320,
+        "triangles": 2630290,
+        "geometries": 369,
+        "textures": 17
+      }
+    },
+    {
+      "label": "narrow",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "readyMs": 1119,
+      "fps": 60.00400026668444,
+      "p95": 16.700000000000273,
+      "stats": {
+        "calls": 304,
+        "triangles": 1147030,
+        "geometries": 368,
+        "textures": 17
+      }
+    }
+  ],
+  "status": "passed"
+}
