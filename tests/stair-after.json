@@ -1,0 +1,2803 @@
+{
+  "checks": [
+    {
+      "name": "desktop: intermediate ascent framing has no nearby floor underside",
+      "passed": true,
+      "detail": {
+        "rays": 1010,
+        "bad": []
+      }
+    },
+    {
+      "name": "desktop: forward armory label",
+      "passed": true,
+      "detail": {
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "caption": "旧甲与长弓，已经听过许多年的风。"
+      }
+    },
+    {
+      "name": "desktop: forward stair-reveal label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: forward stair-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: forward first-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: forward upper-landing label",
+      "passed": true,
+      "detail": {
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "caption": "檐下回望，来时的庭院变成一幅画。"
+      }
+    },
+    {
+      "name": "desktop: forward second-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: forward second-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: forward lookout-landing label",
+      "passed": true,
+      "detail": {
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "caption": "在旅途的尽头，把目光交给远山。"
+      }
+    },
+    {
+      "name": "desktop: backward lookout-landing label",
+      "passed": true,
+      "detail": {
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "caption": "在旅途的尽头，把目光交给远山。"
+      }
+    },
+    {
+      "name": "desktop: backward second-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: backward second-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: backward upper-landing label",
+      "passed": true,
+      "detail": {
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "caption": "檐下回望，来时的庭院变成一幅画。"
+      }
+    },
+    {
+      "name": "desktop: backward first-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: backward stair-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: backward stair-reveal label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "desktop: backward armory label",
+      "passed": true,
+      "detail": {
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "caption": "旧甲与长弓，已经听过许多年的风。"
+      }
+    },
+    {
+      "name": "narrow: intermediate ascent framing has no nearby floor underside",
+      "passed": true,
+      "detail": {
+        "rays": 1010,
+        "bad": []
+      }
+    },
+    {
+      "name": "narrow: forward armory label",
+      "passed": true,
+      "detail": {
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "caption": "旧甲与长弓，已经听过许多年的风。"
+      }
+    },
+    {
+      "name": "narrow: forward stair-reveal label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: forward stair-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: forward first-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: forward upper-landing label",
+      "passed": true,
+      "detail": {
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "caption": "檐下回望，来时的庭院变成一幅画。"
+      }
+    },
+    {
+      "name": "narrow: forward second-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: forward second-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: forward lookout-landing label",
+      "passed": true,
+      "detail": {
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "caption": "在旅途的尽头，把目光交给远山。"
+      }
+    },
+    {
+      "name": "narrow: backward lookout-landing label",
+      "passed": true,
+      "detail": {
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "caption": "在旅途的尽头，把目光交给远山。"
+      }
+    },
+    {
+      "name": "narrow: backward second-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: backward second-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: backward upper-landing label",
+      "passed": true,
+      "detail": {
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "caption": "檐下回望，来时的庭院变成一幅画。"
+      }
+    },
+    {
+      "name": "narrow: backward first-ascent label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: backward stair-approach label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: backward stair-reveal label",
+      "passed": true,
+      "detail": {
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "caption": "沿着木阶，一步一步，靠近天空。"
+      }
+    },
+    {
+      "name": "narrow: backward armory label",
+      "passed": true,
+      "detail": {
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "caption": "旧甲与长弓，已经听过许多年的风。"
+      }
+    },
+    {
+      "name": "no browser errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "samples": [
+    {
+      "viewport": "desktop",
+      "samples": [
+        {
+          "key": 27,
+          "progress": 0.8266899092604367,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.02,
+          "progress": 0.8268083363338988,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.04,
+          "progress": 0.8270169414873537,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.06,
+          "progress": 0.8273085890935914,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.08,
+          "progress": 0.8276797710907512,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.099999999999998,
+          "progress": 0.8281289886387261,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.119999999999997,
+          "progress": 0.8286524633690785,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.139999999999997,
+          "progress": 0.8292445777541291,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.159999999999997,
+          "progress": 0.8299018158294836,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.179999999999996,
+          "progress": 0.8306238984616496,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.199999999999996,
+          "progress": 0.8314037206256358,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.219999999999995,
+          "progress": 0.8322377658939234,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.239999999999995,
+          "progress": 0.8331238286163131,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.259999999999994,
+          "progress": 0.8340581285233637,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.279999999999994,
+          "progress": 0.8350357503048306,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.299999999999994,
+          "progress": 0.8360531773780929,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.319999999999993,
+          "progress": 0.8371087235836431,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.339999999999993,
+          "progress": 0.838196690207922,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.359999999999992,
+          "progress": 0.8393135606279011,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.379999999999992,
+          "progress": 0.8404564257274508,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.39999999999999,
+          "progress": 0.8416215051213095,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.41999999999999,
+          "progress": 0.8428045867360154,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.43999999999999,
+          "progress": 0.8440021539245814,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.45999999999999,
+          "progress": 0.8452111138200638,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.47999999999999,
+          "progress": 0.8464271743200541,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.49999999999999,
+          "progress": 0.8476468187684562,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.51999999999999,
+          "progress": 0.8488664346913055,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.53999999999999,
+          "progress": 0.8500822416790933,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.559999999999988,
+          "progress": 0.8512907309695317,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.579999999999988,
+          "progress": 0.8524883858997239,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.599999999999987,
+          "progress": 0.853670706924759,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.619999999999987,
+          "progress": 0.8548348085939323,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.639999999999986,
+          "progress": 0.8559771742412597,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.659999999999986,
+          "progress": 0.8570934880512305,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.679999999999986,
+          "progress": 0.8581799696063448,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.699999999999985,
+          "progress": 0.859233813470626,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.719999999999985,
+          "progress": 0.8602515029754912,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.739999999999984,
+          "progress": 0.8612271319038733,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.759999999999984,
+          "progress": 0.8621592214673616,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.779999999999983,
+          "progress": 0.8630442549960923,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.799999999999983,
+          "progress": 0.8638772133372371,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.819999999999983,
+          "progress": 0.8646543160700406,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.839999999999982,
+          "progress": 0.865373461089677,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.85999999999998,
+          "progress": 0.8660311317252549,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.87999999999998,
+          "progress": 0.8666200150895125,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.89999999999998,
+          "progress": 0.8671400390605705,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.91999999999998,
+          "progress": 0.8675876869675507,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.93999999999998,
+          "progress": 0.8679572363232759,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.95999999999998,
+          "progress": 0.8682449067086041,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.97999999999998,
+          "progress": 0.8684492993590827,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.99999999999998,
+          "progress": 0.8685668976296963,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.01999999999998,
+          "progress": 0.8686371706724766,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.039999999999978,
+          "progress": 0.8687069548572307,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.059999999999977,
+          "progress": 0.8687762429827646,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.079999999999977,
+          "progress": 0.8688450087991241,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.099999999999977,
+          "progress": 0.8689132348417035,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.119999999999976,
+          "progress": 0.8689809147365906,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.139999999999976,
+          "progress": 0.8690480242442905,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.159999999999975,
+          "progress": 0.8691145007859497,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.179999999999975,
+          "progress": 0.8691803448552711,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.199999999999974,
+          "progress": 0.8692455220816436,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.219999999999974,
+          "progress": 0.8693099747031415,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.239999999999974,
+          "progress": 0.8693736599582597,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.259999999999973,
+          "progress": 0.8694365553128661,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.279999999999973,
+          "progress": 0.8694986165595011,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.299999999999972,
+          "progress": 0.8695597463018546,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.319999999999972,
+          "progress": 0.8696199435009314,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.33999999999997,
+          "progress": 0.8696791591246973,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.35999999999997,
+          "progress": 0.8697373130322265,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.37999999999997,
+          "progress": 0.8697943505137329,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.39999999999997,
+          "progress": 0.8698502489583697,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.41999999999997,
+          "progress": 0.8699049567932409,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.43999999999997,
+          "progress": 0.8699583509155459,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.45999999999997,
+          "progress": 0.8700104471234824,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.47999999999997,
+          "progress": 0.8700611956526616,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.499999999999968,
+          "progress": 0.8701105081729763,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.519999999999968,
+          "progress": 0.870158335213758,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.539999999999967,
+          "progress": 0.8702046726746198,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.559999999999967,
+          "progress": 0.8702494812221775,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.579999999999966,
+          "progress": 0.8702926377798536,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.599999999999966,
+          "progress": 0.8703341997670836,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.619999999999965,
+          "progress": 0.8703741469685901,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.639999999999965,
+          "progress": 0.8704124235391631,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.659999999999965,
+          "progress": 0.8704490317519108,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.679999999999964,
+          "progress": 0.8704840349716474,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.699999999999964,
+          "progress": 0.8705174701675963,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.719999999999963,
+          "progress": 0.8705493181269777,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.739999999999963,
+          "progress": 0.8705797581165877,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.759999999999962,
+          "progress": 0.8706089171323584,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.779999999999962,
+          "progress": 0.8706369371919428,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.79999999999996,
+          "progress": 0.8706640497956477,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.81999999999996,
+          "progress": 0.8706905516803313,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.83999999999996,
+          "progress": 0.8707167551077617,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.85999999999996,
+          "progress": 0.8707430346222342,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.87999999999996,
+          "progress": 0.8707697859698176,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.89999999999996,
+          "progress": 0.8707974011010262,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.91999999999996,
+          "progress": 0.8708263118460775,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.93999999999996,
+          "progress": 0.8708569129931776,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.959999999999958,
+          "progress": 0.8708895074942041,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.979999999999958,
+          "progress": 0.8709244038259982,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.999999999999957,
+          "progress": 0.8709627160979377,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 31,
+          "progress": 0.9195680493610219,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.02,
+          "progress": 0.9196880273723951,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.04,
+          "progress": 0.9198931195825317,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.06,
+          "progress": 0.9201805933574281,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.08,
+          "progress": 0.9205475081237984,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.099999999999998,
+          "progress": 0.9209946372089789,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.119999999999997,
+          "progress": 0.9215141823072688,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.139999999999997,
+          "progress": 0.9221026838315944,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.159999999999997,
+          "progress": 0.9227583775698757,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.179999999999996,
+          "progress": 0.923477499625244,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.199999999999996,
+          "progress": 0.9242547302343337,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.219999999999995,
+          "progress": 0.9250865529209027,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.239999999999995,
+          "progress": 0.9259720987181933,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.259999999999994,
+          "progress": 0.9269048406514181,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.279999999999994,
+          "progress": 0.927881253437572,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.299999999999994,
+          "progress": 0.9288988275010254,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.319999999999993,
+          "progress": 0.9299537704188257,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.339999999999993,
+          "progress": 0.9310414481642667,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.359999999999992,
+          "progress": 0.9321583313958847,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.379999999999992,
+          "progress": 0.9333021303713239,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.39999999999999,
+          "progress": 0.9344677216670196,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.41999999999999,
+          "progress": 0.9356515746496842,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.43999999999999,
+          "progress": 0.9368504695188458,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.45999999999999,
+          "progress": 0.9380606102990771,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.47999999999999,
+          "progress": 0.9392780662717211,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.49999999999999,
+          "progress": 0.9404993059429451,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.51999999999999,
+          "progress": 0.9417206252930083,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.53999999999999,
+          "progress": 0.9429383117907719,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.559999999999988,
+          "progress": 0.9441488335852192,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.579999999999988,
+          "progress": 0.9453482635017583,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.599999999999987,
+          "progress": 0.9465328046276714,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.619999999999987,
+          "progress": 0.9476992318235418,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.639999999999986,
+          "progress": 0.9488440129552159,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.659999999999986,
+          "progress": 0.94996203062558,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.679999999999986,
+          "progress": 0.9510509845970185,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.699999999999985,
+          "progress": 0.9521073426008201,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.719999999999985,
+          "progress": 0.9531264706515513,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.739999999999984,
+          "progress": 0.9541045714905118,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.759999999999984,
+          "progress": 0.955039126131042,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.779999999999983,
+          "progress": 0.9559266021884125,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.799999999999983,
+          "progress": 0.9567604691025834,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.819999999999983,
+          "progress": 0.9575398393619232,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.839999999999982,
+          "progress": 0.9582611805268281,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.85999999999998,
+          "progress": 0.9589191519794076,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.87999999999998,
+          "progress": 0.9595099563263074,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.89999999999998,
+          "progress": 0.960031780962603,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.91999999999998,
+          "progress": 0.9604810934375089,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.93999999999998,
+          "progress": 0.9608499502009493,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.95999999999998,
+          "progress": 0.9611388768204172,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.97999999999998,
+          "progress": 0.961344341246641,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.99999999999998,
+          "progress": 0.9614612238398588,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.01999999999998,
+          "progress": 0.9615316541032515,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.039999999999985,
+          "progress": 0.961601442195933,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.05999999999999,
+          "progress": 0.9616707343758042,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.07999999999999,
+          "progress": 0.9617394900002767,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.099999999999994,
+          "progress": 0.9618077202291678,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.12,
+          "progress": 0.961875404629695,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.14,
+          "progress": 0.9619425024361412,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.160000000000004,
+          "progress": 0.9620089836699625,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.18000000000001,
+          "progress": 0.9620748328933089,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.20000000000001,
+          "progress": 0.9621400157912696,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.22000000000001,
+          "progress": 0.9622044541468969,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.240000000000016,
+          "progress": 0.9622681453669856,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.26000000000002,
+          "progress": 0.9623310473036117,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.28000000000002,
+          "progress": 0.9623930913603377,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.300000000000026,
+          "progress": 0.9624542280076119,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.32000000000003,
+          "progress": 0.9625144327996048,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.34000000000003,
+          "progress": 0.9625736567270002,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.360000000000035,
+          "progress": 0.9626317897797226,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.38000000000004,
+          "progress": 0.9626888359309594,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.40000000000004,
+          "progress": 0.9627447437811534,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.420000000000044,
+          "progress": 0.962799427275577,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.44000000000005,
+          "progress": 0.9628528311721359,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.46000000000005,
+          "progress": 0.9629049378756697,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.480000000000054,
+          "progress": 0.9629556975975596,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.50000000000006,
+          "progress": 0.9630049820673755,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.52000000000006,
+          "progress": 0.9630528206206547,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.54000000000006,
+          "progress": 0.9630991701835304,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.560000000000066,
+          "progress": 0.9631439479080103,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.58000000000007,
+          "progress": 0.963187116834532,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.60000000000007,
+          "progress": 0.9632286915563506,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.620000000000076,
+          "progress": 0.9632686516922288,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.64000000000008,
+          "progress": 0.9633068960072213,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.66000000000008,
+          "progress": 0.9633435170896288,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.680000000000085,
+          "progress": 0.9633785327913308,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.70000000000009,
+          "progress": 0.9634119376931887,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.72000000000009,
+          "progress": 0.963443797798371,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.740000000000094,
+          "progress": 0.9634742484662181,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.7600000000001,
+          "progress": 0.9635034159658399,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.7800000000001,
+          "progress": 0.9635314154912775,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.800000000000104,
+          "progress": 0.963558534864481,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.82000000000011,
+          "progress": 0.9635850393891485,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.84000000000011,
+          "progress": 0.963611241772074,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.86000000000011,
+          "progress": 0.9636375215225567,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.880000000000116,
+          "progress": 0.9636642675922422,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.90000000000012,
+          "progress": 0.9636918718817448,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.92000000000012,
+          "progress": 0.9637208102630149,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.940000000000126,
+          "progress": 0.9637513980268897,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.96000000000013,
+          "progress": 0.9637839745158681,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.98000000000013,
+          "progress": 0.9638189204218844,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 33.000000000000135,
+          "progress": 0.963857202429773,
+          "location": "lookout",
+          "floor": 3
+        }
+      ],
+      "bad": []
+    },
+    {
+      "viewport": "narrow",
+      "samples": [
+        {
+          "key": 27,
+          "progress": 0.8266899092604367,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.02,
+          "progress": 0.8268083363338988,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.04,
+          "progress": 0.8270169414873537,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.06,
+          "progress": 0.8273085890935914,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.08,
+          "progress": 0.8276797710907512,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.099999999999998,
+          "progress": 0.8281289886387261,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.119999999999997,
+          "progress": 0.8286524633690785,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.139999999999997,
+          "progress": 0.8292445777541291,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.159999999999997,
+          "progress": 0.8299018158294836,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.179999999999996,
+          "progress": 0.8306238984616496,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.199999999999996,
+          "progress": 0.8314037206256358,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.219999999999995,
+          "progress": 0.8322377658939234,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.239999999999995,
+          "progress": 0.8331238286163131,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.259999999999994,
+          "progress": 0.8340581285233637,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.279999999999994,
+          "progress": 0.8350357503048306,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.299999999999994,
+          "progress": 0.8360531773780929,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.319999999999993,
+          "progress": 0.8371087235836431,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.339999999999993,
+          "progress": 0.838196690207922,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.359999999999992,
+          "progress": 0.8393135606279011,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.379999999999992,
+          "progress": 0.8404564257274508,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.39999999999999,
+          "progress": 0.8416215051213095,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.41999999999999,
+          "progress": 0.8428045867360154,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.43999999999999,
+          "progress": 0.8440021539245814,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.45999999999999,
+          "progress": 0.8452111138200638,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.47999999999999,
+          "progress": 0.8464271743200541,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.49999999999999,
+          "progress": 0.8476468187684562,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.51999999999999,
+          "progress": 0.8488664346913055,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.53999999999999,
+          "progress": 0.8500822416790933,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.559999999999988,
+          "progress": 0.8512907309695317,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.579999999999988,
+          "progress": 0.8524883858997239,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.599999999999987,
+          "progress": 0.853670706924759,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.619999999999987,
+          "progress": 0.8548348085939323,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.639999999999986,
+          "progress": 0.8559771742412597,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.659999999999986,
+          "progress": 0.8570934880512305,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.679999999999986,
+          "progress": 0.8581799696063448,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.699999999999985,
+          "progress": 0.859233813470626,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.719999999999985,
+          "progress": 0.8602515029754912,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.739999999999984,
+          "progress": 0.8612271319038733,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.759999999999984,
+          "progress": 0.8621592214673616,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.779999999999983,
+          "progress": 0.8630442549960923,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.799999999999983,
+          "progress": 0.8638772133372371,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.819999999999983,
+          "progress": 0.8646543160700406,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.839999999999982,
+          "progress": 0.865373461089677,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.85999999999998,
+          "progress": 0.8660311317252549,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.87999999999998,
+          "progress": 0.8666200150895125,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.89999999999998,
+          "progress": 0.8671400390605705,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.91999999999998,
+          "progress": 0.8675876869675507,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.93999999999998,
+          "progress": 0.8679572363232759,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.95999999999998,
+          "progress": 0.8682449067086041,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.97999999999998,
+          "progress": 0.8684492993590827,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 27.99999999999998,
+          "progress": 0.8685668976296963,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.01999999999998,
+          "progress": 0.8686371706724766,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.039999999999978,
+          "progress": 0.8687069548572307,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.059999999999977,
+          "progress": 0.8687762429827646,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.079999999999977,
+          "progress": 0.8688450087991241,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.099999999999977,
+          "progress": 0.8689132348417035,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.119999999999976,
+          "progress": 0.8689809147365906,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.139999999999976,
+          "progress": 0.8690480242442905,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.159999999999975,
+          "progress": 0.8691145007859497,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.179999999999975,
+          "progress": 0.8691803448552711,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.199999999999974,
+          "progress": 0.8692455220816436,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.219999999999974,
+          "progress": 0.8693099747031415,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.239999999999974,
+          "progress": 0.8693736599582597,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.259999999999973,
+          "progress": 0.8694365553128661,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.279999999999973,
+          "progress": 0.8694986165595011,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.299999999999972,
+          "progress": 0.8695597463018546,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.319999999999972,
+          "progress": 0.8696199435009314,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.33999999999997,
+          "progress": 0.8696791591246973,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.35999999999997,
+          "progress": 0.8697373130322265,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.37999999999997,
+          "progress": 0.8697943505137329,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.39999999999997,
+          "progress": 0.8698502489583697,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.41999999999997,
+          "progress": 0.8699049567932409,
+          "location": "stairs",
+          "floor": 1
+        },
+        {
+          "key": 28.43999999999997,
+          "progress": 0.8699583509155459,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.45999999999997,
+          "progress": 0.8700104471234824,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.47999999999997,
+          "progress": 0.8700611956526616,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.499999999999968,
+          "progress": 0.8701105081729763,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.519999999999968,
+          "progress": 0.870158335213758,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.539999999999967,
+          "progress": 0.8702046726746198,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.559999999999967,
+          "progress": 0.8702494812221775,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.579999999999966,
+          "progress": 0.8702926377798536,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.599999999999966,
+          "progress": 0.8703341997670836,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.619999999999965,
+          "progress": 0.8703741469685901,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.639999999999965,
+          "progress": 0.8704124235391631,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.659999999999965,
+          "progress": 0.8704490317519108,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.679999999999964,
+          "progress": 0.8704840349716474,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.699999999999964,
+          "progress": 0.8705174701675963,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.719999999999963,
+          "progress": 0.8705493181269777,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.739999999999963,
+          "progress": 0.8705797581165877,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.759999999999962,
+          "progress": 0.8706089171323584,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.779999999999962,
+          "progress": 0.8706369371919428,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.79999999999996,
+          "progress": 0.8706640497956477,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.81999999999996,
+          "progress": 0.8706905516803313,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.83999999999996,
+          "progress": 0.8707167551077617,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.85999999999996,
+          "progress": 0.8707430346222342,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.87999999999996,
+          "progress": 0.8707697859698176,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.89999999999996,
+          "progress": 0.8707974011010262,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.91999999999996,
+          "progress": 0.8708263118460775,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.93999999999996,
+          "progress": 0.8708569129931776,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.959999999999958,
+          "progress": 0.8708895074942041,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.979999999999958,
+          "progress": 0.8709244038259982,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 28.999999999999957,
+          "progress": 0.8709627160979377,
+          "location": "upper",
+          "floor": 2
+        },
+        {
+          "key": 31,
+          "progress": 0.9195680493610219,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.02,
+          "progress": 0.9196880273723951,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.04,
+          "progress": 0.9198931195825317,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.06,
+          "progress": 0.9201805933574281,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.08,
+          "progress": 0.9205475081237984,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.099999999999998,
+          "progress": 0.9209946372089789,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.119999999999997,
+          "progress": 0.9215141823072688,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.139999999999997,
+          "progress": 0.9221026838315944,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.159999999999997,
+          "progress": 0.9227583775698757,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.179999999999996,
+          "progress": 0.923477499625244,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.199999999999996,
+          "progress": 0.9242547302343337,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.219999999999995,
+          "progress": 0.9250865529209027,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.239999999999995,
+          "progress": 0.9259720987181933,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.259999999999994,
+          "progress": 0.9269048406514181,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.279999999999994,
+          "progress": 0.927881253437572,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.299999999999994,
+          "progress": 0.9288988275010254,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.319999999999993,
+          "progress": 0.9299537704188257,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.339999999999993,
+          "progress": 0.9310414481642667,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.359999999999992,
+          "progress": 0.9321583313958847,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.379999999999992,
+          "progress": 0.9333021303713239,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.39999999999999,
+          "progress": 0.9344677216670196,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.41999999999999,
+          "progress": 0.9356515746496842,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.43999999999999,
+          "progress": 0.9368504695188458,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.45999999999999,
+          "progress": 0.9380606102990771,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.47999999999999,
+          "progress": 0.9392780662717211,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.49999999999999,
+          "progress": 0.9404993059429451,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.51999999999999,
+          "progress": 0.9417206252930083,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.53999999999999,
+          "progress": 0.9429383117907719,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.559999999999988,
+          "progress": 0.9441488335852192,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.579999999999988,
+          "progress": 0.9453482635017583,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.599999999999987,
+          "progress": 0.9465328046276714,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.619999999999987,
+          "progress": 0.9476992318235418,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.639999999999986,
+          "progress": 0.9488440129552159,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.659999999999986,
+          "progress": 0.94996203062558,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.679999999999986,
+          "progress": 0.9510509845970185,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.699999999999985,
+          "progress": 0.9521073426008201,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.719999999999985,
+          "progress": 0.9531264706515513,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.739999999999984,
+          "progress": 0.9541045714905118,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.759999999999984,
+          "progress": 0.955039126131042,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.779999999999983,
+          "progress": 0.9559266021884125,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.799999999999983,
+          "progress": 0.9567604691025834,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.819999999999983,
+          "progress": 0.9575398393619232,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.839999999999982,
+          "progress": 0.9582611805268281,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.85999999999998,
+          "progress": 0.9589191519794076,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.87999999999998,
+          "progress": 0.9595099563263074,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.89999999999998,
+          "progress": 0.960031780962603,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.91999999999998,
+          "progress": 0.9604810934375089,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.93999999999998,
+          "progress": 0.9608499502009493,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.95999999999998,
+          "progress": 0.9611388768204172,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.97999999999998,
+          "progress": 0.961344341246641,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 31.99999999999998,
+          "progress": 0.9614612238398588,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.01999999999998,
+          "progress": 0.9615316541032515,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.039999999999985,
+          "progress": 0.961601442195933,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.05999999999999,
+          "progress": 0.9616707343758042,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.07999999999999,
+          "progress": 0.9617394900002767,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.099999999999994,
+          "progress": 0.9618077202291678,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.12,
+          "progress": 0.961875404629695,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.14,
+          "progress": 0.9619425024361412,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.160000000000004,
+          "progress": 0.9620089836699625,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.18000000000001,
+          "progress": 0.9620748328933089,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.20000000000001,
+          "progress": 0.9621400157912696,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.22000000000001,
+          "progress": 0.9622044541468969,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.240000000000016,
+          "progress": 0.9622681453669856,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.26000000000002,
+          "progress": 0.9623310473036117,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.28000000000002,
+          "progress": 0.9623930913603377,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.300000000000026,
+          "progress": 0.9624542280076119,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.32000000000003,
+          "progress": 0.9625144327996048,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.34000000000003,
+          "progress": 0.9625736567270002,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.360000000000035,
+          "progress": 0.9626317897797226,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.38000000000004,
+          "progress": 0.9626888359309594,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.40000000000004,
+          "progress": 0.9627447437811534,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.420000000000044,
+          "progress": 0.962799427275577,
+          "location": "stairs",
+          "floor": 2
+        },
+        {
+          "key": 32.44000000000005,
+          "progress": 0.9628528311721359,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.46000000000005,
+          "progress": 0.9629049378756697,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.480000000000054,
+          "progress": 0.9629556975975596,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.50000000000006,
+          "progress": 0.9630049820673755,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.52000000000006,
+          "progress": 0.9630528206206547,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.54000000000006,
+          "progress": 0.9630991701835304,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.560000000000066,
+          "progress": 0.9631439479080103,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.58000000000007,
+          "progress": 0.963187116834532,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.60000000000007,
+          "progress": 0.9632286915563506,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.620000000000076,
+          "progress": 0.9632686516922288,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.64000000000008,
+          "progress": 0.9633068960072213,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.66000000000008,
+          "progress": 0.9633435170896288,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.680000000000085,
+          "progress": 0.9633785327913308,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.70000000000009,
+          "progress": 0.9634119376931887,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.72000000000009,
+          "progress": 0.963443797798371,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.740000000000094,
+          "progress": 0.9634742484662181,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.7600000000001,
+          "progress": 0.9635034159658399,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.7800000000001,
+          "progress": 0.9635314154912775,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.800000000000104,
+          "progress": 0.963558534864481,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.82000000000011,
+          "progress": 0.9635850393891485,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.84000000000011,
+          "progress": 0.963611241772074,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.86000000000011,
+          "progress": 0.9636375215225567,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.880000000000116,
+          "progress": 0.9636642675922422,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.90000000000012,
+          "progress": 0.9636918718817448,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.92000000000012,
+          "progress": 0.9637208102630149,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.940000000000126,
+          "progress": 0.9637513980268897,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.96000000000013,
+          "progress": 0.9637839745158681,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 32.98000000000013,
+          "progress": 0.9638189204218844,
+          "location": "lookout",
+          "floor": 3
+        },
+        {
+          "key": 33.000000000000135,
+          "progress": 0.963857202429773,
+          "location": "lookout",
+          "floor": 3
+        }
+      ],
+      "bad": []
+    }
+  ],
+  "screenshots": [
+    "tests/stair-after-desktop-armory.png",
+    "tests/stair-after-desktop-stair-reveal.png",
+    "tests/stair-after-desktop-stair-approach.png",
+    "tests/stair-after-desktop-first-ascent.png",
+    "tests/stair-after-desktop-upper-landing.png",
+    "tests/stair-after-desktop-second-approach.png",
+    "tests/stair-after-desktop-second-ascent.png",
+    "tests/stair-after-desktop-lookout-landing.png",
+    "tests/stair-after-narrow-armory.png",
+    "tests/stair-after-narrow-stair-reveal.png",
+    "tests/stair-after-narrow-stair-approach.png",
+    "tests/stair-after-narrow-first-ascent.png",
+    "tests/stair-after-narrow-upper-landing.png",
+    "tests/stair-after-narrow-second-approach.png",
+    "tests/stair-after-narrow-second-ascent.png",
+    "tests/stair-after-narrow-lookout-landing.png"
+  ],
+  "status": "passed"
+}

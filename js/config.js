@@ -34,13 +34,17 @@ export const WAYPOINTS = [
   {p:[6.5,6.85,-7.4],t:[10,6.7,-2]},
   {p:[9,6.85,-5],t:[11.8,6.15,-2.8],id:'study',name:'书斋',en:'The study',caption:'纸页之间，山色与庭影悄然入窗。',floor:1},
   {p:[10,6.85,-8],t:[10,6.5,-13]},
-  {p:[10,6.85,-12],t:[12,6.9,-14],id:'armory',name:'兵具间',en:'The armory',caption:'旧甲与长弓，已经听过许多年的风。',floor:1},
-  {p:[10,6.85,-16],t:[4,7,-18]},
-  {p:[4.8,6.85,-16],t:[4.8,9,-22],id:'stairs',name:'天守楼梯',en:'The ascent',caption:'沿着木阶，一步一步，靠近天空。',floor:1},
-  {p:[4.8,6.85,-17],t:[4.8,10,-24]},
+  {p:[10,6.85,-12],t:[7.5,6.8,-12.5],id:'armory',name:'兵具间',en:'The armory',caption:'旧甲与长弓，已经听过许多年的风。',floor:1},
+  {p:[10,6.85,-16],t:[4.8,7.25,-22]},
+  {p:[4.8,6.85,-16],t:[4.8,7.7,-21],id:'stairs',name:'天守楼梯',en:'The ascent',caption:'沿着木阶，一步一步，靠近天空。',floor:1},
+  {p:[4.8,6.85,-17],t:[4.8,9.2,-24]},
+  // Keep looking along each open stair lane until the eye clears the landing.
+  // Turning toward the gallery earlier exposes the underside of its floor.
+  {p:[4.8,11.79,-23.65],t:[4.8,12.15,-27]},
   {p:[4.8,12.05,-24],t:[-4.8,12.2,-24],id:'upper',name:'上层回廊',en:'The upper gallery',caption:'檐下回望，来时的庭院变成一幅画。',floor:2},
   {p:[0,12.05,-24],t:[0,12,-33]},
   {p:[-4.8,12.05,-24],t:[-4.8,16,-17]},
+  {p:[-4.8,16.99,-17.35],t:[-4.8,17.2,-13.5]},
   {p:[-4.8,17.25,-17],t:[0,17.5,-17]},
   {p:[0,17.25,-17],t:[1,13,18]},
   {p:[.8,17.25,-14.8],t:[1,10,40],id:'lookout',name:'望楼',en:'The lookout',caption:'在旅途的尽头，把目光交给远山。',floor:3}

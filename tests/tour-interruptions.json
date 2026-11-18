@@ -1,38 +1,18 @@
 {
   "checks": [
     {
-      "name": "handoffs use only two destination poses",
+      "name": "local inspection handoffs keep one eye position",
       "passed": true,
       "detail": {
         "poses": [
-          "0.800,17.250,-14.800",
-          "48.295,46.239,54.362"
+          "0.800,17.250,-14.800"
         ]
       }
     },
     {
-      "name": "every camera cut is fully covered",
+      "name": "local inspection has no positional camera cut",
       "passed": true,
-      "detail": [
-        {
-          "mode": "transition",
-          "pos": [
-            48.294742484624244,
-            46.239478268757225,
-            54.36228763735064
-          ],
-          "cover": 1
-        },
-        {
-          "mode": "transition",
-          "pos": [
-            0.8000000000000003,
-            17.25,
-            -14.800000000000006
-          ],
-          "cover": 1
-        }
-      ]
+      "detail": []
     },
     {
       "name": "entry: newest room wins without scroll lock",

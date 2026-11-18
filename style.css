@@ -21,3 +21,6 @@ footer{background:#e8e5d6}dialog{background:#f3eedf;border-color:#c1b69a}
 #scene canvas{touch-action:pan-y pinch-zoom}
 
 #floor-plan [role="button"]:focus-visible rect{stroke:var(--sage);stroke-width:3}
+
+.inspecting .hero-copy,.inspecting .vertical-note,.inspecting .scroll-cue{visibility:hidden}
+#scene canvas:focus-visible{outline:2px solid var(--sage);outline-offset:-4px}

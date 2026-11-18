@@ -1,0 +1,3033 @@
+{
+  "checks": [
+    {
+      "name": "desktop: forward waypoint 0 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 0,
+        "p": 0,
+        "position": [
+          38,
+          23.65,
+          68
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 1 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 1,
+        "p": 0.08741353685801077,
+        "position": [
+          25,
+          16.65,
+          59
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 2 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 2,
+        "p": 0.18977011965838536,
+        "position": [
+          10,
+          8.65,
+          48
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 3 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 3,
+        "p": 0.2483104188995042,
+        "position": [
+          0,
+          5.65,
+          43
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 4 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 4,
+        "p": 0.2837704557332632,
+        "position": [
+          0,
+          5.65,
+          36
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 5 belongs to gate",
+      "passed": true,
+      "detail": {
+        "i": 5,
+        "p": 0.3191557712486354,
+        "position": [
+          0,
+          5.65,
+          29
+        ],
+        "id": "gate",
+        "floor": 1,
+        "title": "城门 · The gate",
+        "number": "03"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 6 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 6,
+        "p": 0.34447609385113986,
+        "position": [
+          0,
+          5.65,
+          24
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 7 belongs to guard",
+      "passed": true,
+      "detail": {
+        "i": 7,
+        "p": 0.3777439580175343,
+        "position": [
+          -6.5,
+          5.65,
+          23
+        ],
+        "id": "guard",
+        "floor": 1,
+        "title": "守卫室 · The guard room",
+        "number": "04"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 8 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 8,
+        "p": 0.41101980200327476,
+        "position": [
+          0,
+          5.65,
+          22
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 9 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 9,
+        "p": 0.4413874188984135,
+        "position": [
+          0,
+          5.65,
+          16
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 10 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 10,
+        "p": 0.4565554264045259,
+        "position": [
+          0,
+          5.65,
+          13
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 11 belongs to entrance",
+      "passed": true,
+      "detail": {
+        "i": 11,
+        "p": 0.47103615689095496,
+        "position": [
+          0,
+          6.85,
+          10.4
+        ],
+        "id": "entrance",
+        "floor": 1,
+        "title": "主殿 · The main hall",
+        "number": "06"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 12 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 12,
+        "p": 0.48830100960812894,
+        "position": [
+          0,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 13 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 13,
+        "p": 0.5236985767951985,
+        "position": [
+          -7,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 14 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 14,
+        "p": 0.5420267287405973,
+        "position": [
+          -9,
+          6.85,
+          4
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 15 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 15,
+        "p": 0.5804403641747913,
+        "position": [
+          -6.6,
+          6.5,
+          -3.2
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 16 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 16,
+        "p": 0.5968021958133279,
+        "position": [
+          -6.4,
+          6.85,
+          0
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 17 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 17,
+        "p": 0.6091499297454831,
+        "position": [
+          -4,
+          6.85,
+          0
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 18 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 18,
+        "p": 0.6572113671513033,
+        "position": [
+          -4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 19 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 19,
+        "p": 0.6977221654876171,
+        "position": [
+          4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 20 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 20,
+        "p": 0.7084725392332827,
+        "position": [
+          4,
+          6.85,
+          -7.4
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 21 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 21,
+        "p": 0.7211266573854601,
+        "position": [
+          6.5,
+          6.85,
+          -7.4
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 22 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 22,
+        "p": 0.7386622083447166,
+        "position": [
+          9,
+          6.85,
+          -5
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 23 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 23,
+        "p": 0.7546733569959181,
+        "position": [
+          10,
+          6.85,
+          -8
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 24 belongs to armory",
+      "passed": true,
+      "detail": {
+        "i": 24,
+        "p": 0.774894793274029,
+        "position": [
+          10,
+          6.85,
+          -12
+        ],
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "number": "11"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 25 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 25,
+        "p": 0.7951536428969282,
+        "position": [
+          10,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 26 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 26,
+        "p": 0.8214563003008389,
+        "position": [
+          4.8,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 27 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 27,
+        "p": 0.8266899092604367,
+        "position": [
+          4.8,
+          6.85,
+          -17
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 28 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 28,
+        "p": 0.8685668976296963,
+        "position": [
+          4.8,
+          11.79,
+          -23.65
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 29 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 29,
+        "p": 0.8709627160979377,
+        "position": [
+          4.8,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 30 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 30,
+        "p": 0.8952267059924541,
+        "position": [
+          0,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 31 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 31,
+        "p": 0.9195680493610219,
+        "position": [
+          -4.8,
+          12.05,
+          -24
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 32 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 32,
+        "p": 0.9614612238398588,
+        "position": [
+          -4.8,
+          16.99,
+          -17.35
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 33 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 33,
+        "p": 0.963857202429773,
+        "position": [
+          -4.8,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 34 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 34,
+        "p": 0.988125932057018,
+        "position": [
+          0,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: forward waypoint 35 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 35,
+        "p": 1,
+        "position": [
+          0.8,
+          17.25,
+          -14.8
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 35 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 35,
+        "p": 1,
+        "position": [
+          0.8,
+          17.25,
+          -14.8
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 34 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 34,
+        "p": 0.988125932057018,
+        "position": [
+          0,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 33 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 33,
+        "p": 0.963857202429773,
+        "position": [
+          -4.8,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 32 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 32,
+        "p": 0.9614612238398588,
+        "position": [
+          -4.8,
+          16.99,
+          -17.35
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 31 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 31,
+        "p": 0.9195680493610219,
+        "position": [
+          -4.8,
+          12.05,
+          -24
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 30 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 30,
+        "p": 0.8952267059924541,
+        "position": [
+          0,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 29 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 29,
+        "p": 0.8709627160979377,
+        "position": [
+          4.8,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 28 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 28,
+        "p": 0.8685668976296963,
+        "position": [
+          4.8,
+          11.79,
+          -23.65
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 27 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 27,
+        "p": 0.8266899092604367,
+        "position": [
+          4.8,
+          6.85,
+          -17
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 26 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 26,
+        "p": 0.8214563003008389,
+        "position": [
+          4.8,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 25 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 25,
+        "p": 0.7951536428969282,
+        "position": [
+          10,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 24 belongs to armory",
+      "passed": true,
+      "detail": {
+        "i": 24,
+        "p": 0.774894793274029,
+        "position": [
+          10,
+          6.85,
+          -12
+        ],
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "number": "11"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 23 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 23,
+        "p": 0.7546733569959181,
+        "position": [
+          10,
+          6.85,
+          -8
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 22 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 22,
+        "p": 0.7386622083447166,
+        "position": [
+          9,
+          6.85,
+          -5
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 21 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 21,
+        "p": 0.7211266573854601,
+        "position": [
+          6.5,
+          6.85,
+          -7.4
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 20 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 20,
+        "p": 0.7084725392332827,
+        "position": [
+          4,
+          6.85,
+          -7.4
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 19 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 19,
+        "p": 0.6977221654876171,
+        "position": [
+          4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 18 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 18,
+        "p": 0.6572113671513033,
+        "position": [
+          -4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 17 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 17,
+        "p": 0.6091499297454831,
+        "position": [
+          -4,
+          6.85,
+          0
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 16 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 16,
+        "p": 0.5968021958133279,
+        "position": [
+          -6.4,
+          6.85,
+          0
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 15 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 15,
+        "p": 0.5804403641747913,
+        "position": [
+          -6.6,
+          6.5,
+          -3.2
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 14 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 14,
+        "p": 0.5420267287405973,
+        "position": [
+          -9,
+          6.85,
+          4
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 13 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 13,
+        "p": 0.5236985767951985,
+        "position": [
+          -7,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 12 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 12,
+        "p": 0.48830100960812894,
+        "position": [
+          0,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 11 belongs to entrance",
+      "passed": true,
+      "detail": {
+        "i": 11,
+        "p": 0.47103615689095496,
+        "position": [
+          0,
+          6.85,
+          10.4
+        ],
+        "id": "entrance",
+        "floor": 1,
+        "title": "主殿 · The main hall",
+        "number": "06"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 10 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 10,
+        "p": 0.4565554264045259,
+        "position": [
+          0,
+          5.65,
+          13
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 9 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 9,
+        "p": 0.4413874188984135,
+        "position": [
+          0,
+          5.65,
+          16
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 8 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 8,
+        "p": 0.41101980200327476,
+        "position": [
+          0,
+          5.65,
+          22
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 7 belongs to guard",
+      "passed": true,
+      "detail": {
+        "i": 7,
+        "p": 0.3777439580175343,
+        "position": [
+          -6.5,
+          5.65,
+          23
+        ],
+        "id": "guard",
+        "floor": 1,
+        "title": "守卫室 · The guard room",
+        "number": "04"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 6 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 6,
+        "p": 0.34447609385113986,
+        "position": [
+          0,
+          5.65,
+          24
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 5 belongs to gate",
+      "passed": true,
+      "detail": {
+        "i": 5,
+        "p": 0.3191557712486354,
+        "position": [
+          0,
+          5.65,
+          29
+        ],
+        "id": "gate",
+        "floor": 1,
+        "title": "城门 · The gate",
+        "number": "03"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 4 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 4,
+        "p": 0.2837704557332632,
+        "position": [
+          0,
+          5.65,
+          36
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 3 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 3,
+        "p": 0.2483104188995042,
+        "position": [
+          0,
+          5.65,
+          43
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 2 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 2,
+        "p": 0.18977011965838536,
+        "position": [
+          10,
+          8.65,
+          48
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 1 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 1,
+        "p": 0.08741353685801077,
+        "position": [
+          25,
+          16.65,
+          59
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: backward waypoint 0 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 0,
+        "p": 0,
+        "position": [
+          38,
+          23.65,
+          68
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "desktop: tea enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            -6.6021524049734435,
+            6.500068103810824,
+            -3.1960383777473087
+          ],
+          "q": [
+            -0.03247475194258978,
+            0.36789609949990043,
+            0.012857508531857501,
+            0.9292107053480281
+          ],
+          "fov": 45,
+          "p": 0.5804166666666667,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "tea"
+        },
+        "entry": {
+          "pos": [
+            -6.6021524049734435,
+            6.500068103810824,
+            -3.1960383777473087
+          ],
+          "q": [
+            -0.03247475194258978,
+            0.36789609949990043,
+            0.012857508531857501,
+            0.9292107053480281
+          ],
+          "fov": 45,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "tea"
+        }
+      }
+    },
+    {
+      "name": "desktop: tea full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "desktop: tea return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "desktop: garden enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            -3.999354854224155,
+            6.85,
+            -0.0029074616659197743
+          ],
+          "q": [
+            -0.05524605530541567,
+            -0.38210291077076747,
+            -0.022890989715147334,
+            0.9221828677347887
+          ],
+          "fov": 49,
+          "p": 0.6091666666666666,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "garden"
+        },
+        "entry": {
+          "pos": [
+            -3.999354854224155,
+            6.85,
+            -0.0029074616659197743
+          ],
+          "q": [
+            -0.05524605530541567,
+            -0.38210291077076747,
+            -0.022890989715147334,
+            0.9221828677347887
+          ],
+          "fov": 49,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "garden"
+        }
+      }
+    },
+    {
+      "name": "desktop: garden full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "desktop: garden return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "desktop: study enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            8.996896004594003,
+            6.85,
+            -5.0001515437041775
+          ],
+          "q": [
+            0.0423405973019509,
+            0.8950858604157907,
+            0.08707184155041353,
+            -0.43525517884668236
+          ],
+          "fov": 49,
+          "p": 0.7386458333333333,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "study"
+        },
+        "entry": {
+          "pos": [
+            8.996896004594003,
+            6.85,
+            -5.0001515437041775
+          ],
+          "q": [
+            0.0423405973019509,
+            0.8950858604157907,
+            0.08707184155041353,
+            -0.43525517884668236
+          ],
+          "fov": 49,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "study"
+        }
+      }
+    },
+    {
+      "name": "desktop: study full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "desktop: study return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "desktop: lookout enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "p": 1,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "lookout"
+        },
+        "entry": {
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "lookout"
+        }
+      }
+    },
+    {
+      "name": "desktop: lookout full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "desktop: lookout return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "narrow: forward waypoint 0 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 0,
+        "p": 0,
+        "position": [
+          38,
+          23.65,
+          68
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 1 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 1,
+        "p": 0.08741353685801077,
+        "position": [
+          25,
+          16.65,
+          59
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 2 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 2,
+        "p": 0.18977011965838536,
+        "position": [
+          10,
+          8.65,
+          48
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 3 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 3,
+        "p": 0.2483104188995042,
+        "position": [
+          0,
+          5.65,
+          43
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 4 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 4,
+        "p": 0.2837704557332632,
+        "position": [
+          0,
+          5.65,
+          36
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 5 belongs to gate",
+      "passed": true,
+      "detail": {
+        "i": 5,
+        "p": 0.3191557712486354,
+        "position": [
+          0,
+          5.65,
+          29
+        ],
+        "id": "gate",
+        "floor": 1,
+        "title": "城门 · The gate",
+        "number": "03"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 6 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 6,
+        "p": 0.34447609385113986,
+        "position": [
+          0,
+          5.65,
+          24
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 7 belongs to guard",
+      "passed": true,
+      "detail": {
+        "i": 7,
+        "p": 0.3777439580175343,
+        "position": [
+          -6.5,
+          5.65,
+          23
+        ],
+        "id": "guard",
+        "floor": 1,
+        "title": "守卫室 · The guard room",
+        "number": "04"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 8 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 8,
+        "p": 0.41101980200327476,
+        "position": [
+          0,
+          5.65,
+          22
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 9 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 9,
+        "p": 0.4413874188984135,
+        "position": [
+          0,
+          5.65,
+          16
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 10 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 10,
+        "p": 0.4565554264045259,
+        "position": [
+          0,
+          5.65,
+          13
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 11 belongs to entrance",
+      "passed": true,
+      "detail": {
+        "i": 11,
+        "p": 0.47103615689095496,
+        "position": [
+          0,
+          6.85,
+          10.4
+        ],
+        "id": "entrance",
+        "floor": 1,
+        "title": "主殿 · The main hall",
+        "number": "06"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 12 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 12,
+        "p": 0.48830100960812894,
+        "position": [
+          0,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 13 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 13,
+        "p": 0.5236985767951985,
+        "position": [
+          -7,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 14 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 14,
+        "p": 0.5420267287405973,
+        "position": [
+          -9,
+          6.85,
+          4
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 15 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 15,
+        "p": 0.5804403641747913,
+        "position": [
+          -6.6,
+          6.5,
+          -3.2
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 16 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 16,
+        "p": 0.5968021958133279,
+        "position": [
+          -6.4,
+          6.85,
+          0
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 17 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 17,
+        "p": 0.6091499297454831,
+        "position": [
+          -4,
+          6.85,
+          0
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 18 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 18,
+        "p": 0.6572113671513033,
+        "position": [
+          -4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 19 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 19,
+        "p": 0.6977221654876171,
+        "position": [
+          4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 20 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 20,
+        "p": 0.7084725392332827,
+        "position": [
+          4,
+          6.85,
+          -7.4
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 21 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 21,
+        "p": 0.7211266573854601,
+        "position": [
+          6.5,
+          6.85,
+          -7.4
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 22 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 22,
+        "p": 0.7386622083447166,
+        "position": [
+          9,
+          6.85,
+          -5
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 23 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 23,
+        "p": 0.7546733569959181,
+        "position": [
+          10,
+          6.85,
+          -8
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 24 belongs to armory",
+      "passed": true,
+      "detail": {
+        "i": 24,
+        "p": 0.774894793274029,
+        "position": [
+          10,
+          6.85,
+          -12
+        ],
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "number": "11"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 25 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 25,
+        "p": 0.7951536428969282,
+        "position": [
+          10,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 26 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 26,
+        "p": 0.8214563003008389,
+        "position": [
+          4.8,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 27 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 27,
+        "p": 0.8266899092604367,
+        "position": [
+          4.8,
+          6.85,
+          -17
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 28 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 28,
+        "p": 0.8685668976296963,
+        "position": [
+          4.8,
+          11.79,
+          -23.65
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 29 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 29,
+        "p": 0.8709627160979377,
+        "position": [
+          4.8,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 30 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 30,
+        "p": 0.8952267059924541,
+        "position": [
+          0,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 31 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 31,
+        "p": 0.9195680493610219,
+        "position": [
+          -4.8,
+          12.05,
+          -24
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 32 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 32,
+        "p": 0.9614612238398588,
+        "position": [
+          -4.8,
+          16.99,
+          -17.35
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 33 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 33,
+        "p": 0.963857202429773,
+        "position": [
+          -4.8,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 34 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 34,
+        "p": 0.988125932057018,
+        "position": [
+          0,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: forward waypoint 35 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 35,
+        "p": 1,
+        "position": [
+          0.8,
+          17.25,
+          -14.8
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 35 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 35,
+        "p": 1,
+        "position": [
+          0.8,
+          17.25,
+          -14.8
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 34 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 34,
+        "p": 0.988125932057018,
+        "position": [
+          0,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 33 belongs to lookout",
+      "passed": true,
+      "detail": {
+        "i": 33,
+        "p": 0.963857202429773,
+        "position": [
+          -4.8,
+          17.25,
+          -17
+        ],
+        "id": "lookout",
+        "floor": 3,
+        "title": "望楼 · The lookout",
+        "number": "14"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 32 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 32,
+        "p": 0.9614612238398588,
+        "position": [
+          -4.8,
+          16.99,
+          -17.35
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 31 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 31,
+        "p": 0.9195680493610219,
+        "position": [
+          -4.8,
+          12.05,
+          -24
+        ],
+        "id": "stairs",
+        "floor": 2,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 30 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 30,
+        "p": 0.8952267059924541,
+        "position": [
+          0,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 29 belongs to upper",
+      "passed": true,
+      "detail": {
+        "i": 29,
+        "p": 0.8709627160979377,
+        "position": [
+          4.8,
+          12.05,
+          -24
+        ],
+        "id": "upper",
+        "floor": 2,
+        "title": "上层回廊 · The upper gallery",
+        "number": "13"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 28 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 28,
+        "p": 0.8685668976296963,
+        "position": [
+          4.8,
+          11.79,
+          -23.65
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 27 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 27,
+        "p": 0.8266899092604367,
+        "position": [
+          4.8,
+          6.85,
+          -17
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 26 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 26,
+        "p": 0.8214563003008389,
+        "position": [
+          4.8,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 25 belongs to stairs",
+      "passed": true,
+      "detail": {
+        "i": 25,
+        "p": 0.7951536428969282,
+        "position": [
+          10,
+          6.85,
+          -16
+        ],
+        "id": "stairs",
+        "floor": 1,
+        "title": "天守楼梯 · The ascent",
+        "number": "12"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 24 belongs to armory",
+      "passed": true,
+      "detail": {
+        "i": 24,
+        "p": 0.774894793274029,
+        "position": [
+          10,
+          6.85,
+          -12
+        ],
+        "id": "armory",
+        "floor": 1,
+        "title": "兵具间 · The armory",
+        "number": "11"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 23 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 23,
+        "p": 0.7546733569959181,
+        "position": [
+          10,
+          6.85,
+          -8
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 22 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 22,
+        "p": 0.7386622083447166,
+        "position": [
+          9,
+          6.85,
+          -5
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 21 belongs to study",
+      "passed": true,
+      "detail": {
+        "i": 21,
+        "p": 0.7211266573854601,
+        "position": [
+          6.5,
+          6.85,
+          -7.4
+        ],
+        "id": "study",
+        "floor": 1,
+        "title": "书斋 · The study",
+        "number": "10"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 20 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 20,
+        "p": 0.7084725392332827,
+        "position": [
+          4,
+          6.85,
+          -7.4
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 19 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 19,
+        "p": 0.6977221654876171,
+        "position": [
+          4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 18 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 18,
+        "p": 0.6572113671513033,
+        "position": [
+          -4,
+          6.85,
+          -9.5
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 17 belongs to garden",
+      "passed": true,
+      "detail": {
+        "i": 17,
+        "p": 0.6091499297454831,
+        "position": [
+          -4,
+          6.85,
+          0
+        ],
+        "id": "garden",
+        "floor": 1,
+        "title": "中庭 · The inner garden",
+        "number": "09"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 16 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 16,
+        "p": 0.5968021958133279,
+        "position": [
+          -6.4,
+          6.85,
+          0
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 15 belongs to tea",
+      "passed": true,
+      "detail": {
+        "i": 15,
+        "p": 0.5804403641747913,
+        "position": [
+          -6.6,
+          6.5,
+          -3.2
+        ],
+        "id": "tea",
+        "floor": 1,
+        "title": "茶室 · The tea room",
+        "number": "08"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 14 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 14,
+        "p": 0.5420267287405973,
+        "position": [
+          -9,
+          6.85,
+          4
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 13 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 13,
+        "p": 0.5236985767951985,
+        "position": [
+          -7,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 12 belongs to corridor",
+      "passed": true,
+      "detail": {
+        "i": 12,
+        "p": 0.48830100960812894,
+        "position": [
+          0,
+          6.85,
+          7
+        ],
+        "id": "corridor",
+        "floor": 1,
+        "title": "主回廊 · The timber corridor",
+        "number": "07"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 11 belongs to entrance",
+      "passed": true,
+      "detail": {
+        "i": 11,
+        "p": 0.47103615689095496,
+        "position": [
+          0,
+          6.85,
+          10.4
+        ],
+        "id": "entrance",
+        "floor": 1,
+        "title": "主殿 · The main hall",
+        "number": "06"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 10 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 10,
+        "p": 0.4565554264045259,
+        "position": [
+          0,
+          5.65,
+          13
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 9 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 9,
+        "p": 0.4413874188984135,
+        "position": [
+          0,
+          5.65,
+          16
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 8 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 8,
+        "p": 0.41101980200327476,
+        "position": [
+          0,
+          5.65,
+          22
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 7 belongs to guard",
+      "passed": true,
+      "detail": {
+        "i": 7,
+        "p": 0.3777439580175343,
+        "position": [
+          -6.5,
+          5.65,
+          23
+        ],
+        "id": "guard",
+        "floor": 1,
+        "title": "守卫室 · The guard room",
+        "number": "04"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 6 belongs to forecourt",
+      "passed": true,
+      "detail": {
+        "i": 6,
+        "p": 0.34447609385113986,
+        "position": [
+          0,
+          5.65,
+          24
+        ],
+        "id": "forecourt",
+        "floor": 1,
+        "title": "前庭 · The forecourt",
+        "number": "05"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 5 belongs to gate",
+      "passed": true,
+      "detail": {
+        "i": 5,
+        "p": 0.3191557712486354,
+        "position": [
+          0,
+          5.65,
+          29
+        ],
+        "id": "gate",
+        "floor": 1,
+        "title": "城门 · The gate",
+        "number": "03"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 4 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 4,
+        "p": 0.2837704557332632,
+        "position": [
+          0,
+          5.65,
+          36
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 3 belongs to bridge",
+      "passed": true,
+      "detail": {
+        "i": 3,
+        "p": 0.2483104188995042,
+        "position": [
+          0,
+          5.65,
+          43
+        ],
+        "id": "bridge",
+        "floor": 1,
+        "title": "木桥 · The bridge",
+        "number": "02"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 2 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 2,
+        "p": 0.18977011965838536,
+        "position": [
+          10,
+          8.65,
+          48
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 1 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 1,
+        "p": 0.08741353685801077,
+        "position": [
+          25,
+          16.65,
+          59
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: backward waypoint 0 belongs to approach",
+      "passed": true,
+      "detail": {
+        "i": 0,
+        "p": 0,
+        "position": [
+          38,
+          23.65,
+          68
+        ],
+        "id": "approach",
+        "floor": 1,
+        "title": "山路 · The approach",
+        "number": "01"
+      }
+    },
+    {
+      "name": "narrow: tea enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            -6.598871176934255,
+            6.500030030662669,
+            -3.2014443476730405
+          ],
+          "q": [
+            -0.035448830039080316,
+            0.45355638790324926,
+            0.018058334868580776,
+            0.8903391937811072
+          ],
+          "fov": 53,
+          "p": 0.5804502369668246,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "tea"
+        },
+        "entry": {
+          "pos": [
+            -6.598871176934255,
+            6.500030030662669,
+            -3.2014443476730405
+          ],
+          "q": [
+            -0.035448830039080316,
+            0.45355638790324926,
+            0.018058334868580776,
+            0.8903391937811072
+          ],
+          "fov": 53,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "tea"
+        }
+      }
+    },
+    {
+      "name": "narrow: tea full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "narrow: garden enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            -4.0015735819365075,
+            6.850001237730917,
+            0.0050138199156486984
+          ],
+          "q": [
+            -0.05519884167120341,
+            -0.38184135489408794,
+            -0.02285299304465895,
+            0.9222949681526541
+          ],
+          "fov": 57,
+          "p": 0.6091232227488151,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "garden"
+        },
+        "entry": {
+          "pos": [
+            -4.0015735819365075,
+            6.850001237730917,
+            0.0050138199156486984
+          ],
+          "q": [
+            -0.05519884167120341,
+            -0.38184135489408794,
+            -0.02285299304465895,
+            0.9222949681526541
+          ],
+          "fov": 57,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "garden"
+        }
+      }
+    },
+    {
+      "name": "narrow: garden full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "narrow: garden return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "narrow: study enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            8.993091087276518,
+            6.85,
+            -5.001322013215622
+          ],
+          "q": [
+            0.0422866202535111,
+            0.8950807188625804,
+            0.0869524103506086,
+            -0.4352948733929691
+          ],
+          "fov": 57,
+          "p": 0.7386255924170616,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "study"
+        },
+        "entry": {
+          "pos": [
+            8.993091087276518,
+            6.85,
+            -5.001322013215622
+          ],
+          "q": [
+            0.0422866202535111,
+            0.8950807188625804,
+            0.0869524103506086,
+            -0.4352948733929691
+          ],
+          "fov": 57,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "study"
+        }
+      }
+    },
+    {
+      "name": "narrow: study full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "narrow: study return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "narrow: lookout enters in place",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "p": 1,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "lookout"
+        },
+        "entry": {
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "roofs": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "location": "lookout"
+        }
+      }
+    },
+    {
+      "name": "narrow: lookout full turn and zoom keep eye position",
+      "passed": true
+    },
+    {
+      "name": "narrow: lookout return restores pose and location",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "tests/local-desktop-tea-entry.png",
+    "tests/local-desktop-garden-entry.png",
+    "tests/local-narrow-tea-entry.png",
+    "tests/local-narrow-garden-entry.png"
+  ],
+  "status": "passed"
+}

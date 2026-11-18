@@ -1,6 +1,6 @@
 {
   "checks": [
-    "single-finger orbit",
+    "single-finger local look",
     "two-finger zoom",
     "touch return to walk",
     "mobile architecture layout",

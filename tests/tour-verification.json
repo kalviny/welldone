@@ -70,11 +70,51 @@
       "passed": true
     },
     {
-      "name": "desktop: approach bounded exterior inspection",
-      "passed": true
+      "name": "desktop: approach local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07399179486334237,
+            0.2708227429063805,
+            0.02088330407120054,
+            0.9595541380394519
+          ],
+          "fov": 41.5,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07399179486334237,
+            0.2708227429063805,
+            0.02088330407120054,
+            0.9595541380394519
+          ],
+          "fov": 41.5,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "desktop: approach orbit changes pose",
+      "name": "desktop: approach look and zoom stay in place",
       "passed": true
     },
     {
@@ -126,11 +166,51 @@
       "passed": true
     },
     {
-      "name": "desktop: tea bounded exterior inspection",
-      "passed": true
+      "name": "desktop: tea local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0.5805208333333334,
+          "desired": 0.5805208333333334,
+          "pos": [
+            -6.601798663053908,
+            6.50005047865595,
+            -3.196750884019382
+          ],
+          "q": [
+            -0.03247464703212204,
+            0.36793373284063907,
+            0.012858988668371407,
+            0.9291957877371803
+          ],
+          "fov": 45,
+          "scroll": 5573,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 0.5805208333333334,
+          "desired": 0.5805208333333334,
+          "pos": [
+            -6.601798663053908,
+            6.50005047865595,
+            -3.196750884019382
+          ],
+          "q": [
+            -0.03247464703212204,
+            0.36793373284063907,
+            0.012858988668371407,
+            0.9291957877371803
+          ],
+          "fov": 45,
+          "scroll": 5573,
+          "title": "茶室 · The tea room",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "desktop: tea orbit changes pose",
+      "name": "desktop: tea look and zoom stay in place",
       "passed": true
     },
     {
@@ -138,18 +218,18 @@
       "passed": true,
       "detail": {
         "before": {
-          "p": 0.5805406564026016,
-          "desired": 0.5805406564026016,
+          "p": 0.5805208333333334,
+          "desired": 0.5805208333333334,
           "pos": [
-            -6.5999999999999845,
-            6.5,
-            -3.200000000000023
+            -6.601798663053908,
+            6.50005047865595,
+            -3.196750884019382
           ],
           "q": [
-            -0.032474605202640276,
-            0.36812277660331905,
-            0.01286661730464634,
-            0.929120805666266
+            -0.03247464703212204,
+            0.36793373284063907,
+            0.012858988668371407,
+            0.9291957877371803
           ],
           "fov": 45,
           "scroll": 5573,
@@ -182,11 +262,51 @@
       "passed": true
     },
     {
-      "name": "desktop: lookout bounded exterior inspection",
-      "passed": true
+      "name": "desktop: lookout local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "scroll": 9600,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "scroll": 9600,
+          "title": "望楼 · The lookout",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "desktop: lookout orbit changes pose",
+      "name": "desktop: lookout look and zoom stay in place",
       "passed": true
     },
     {
@@ -390,11 +510,51 @@
       "passed": true
     },
     {
-      "name": "narrow: approach bounded exterior inspection",
-      "passed": true
+      "name": "narrow: approach local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07818649030954798,
+            0.2315886048109619,
+            0.01867699404555944,
+            0.9694868543452301
+          ],
+          "fov": 57,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07818649030954798,
+            0.2315886048109619,
+            0.01867699404555944,
+            0.9694868543452301
+          ],
+          "fov": 57,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "narrow: approach orbit changes pose",
+      "name": "narrow: approach look and zoom stay in place",
       "passed": true
     },
     {
@@ -446,11 +606,51 @@
       "passed": true
     },
     {
-      "name": "narrow: tea bounded exterior inspection",
-      "passed": true
+      "name": "narrow: tea local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0.580568720379147,
+          "desired": 0.580568720379147,
+          "pos": [
+            -6.595636732632196,
+            6.500445637413544,
+            -3.2023744109545724
+          ],
+          "q": [
+            -0.03554309209217637,
+            0.4533798774973264,
+            0.018097572673402038,
+            0.8904245353472506
+          ],
+          "fov": 53,
+          "scroll": 4900,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 0.580568720379147,
+          "desired": 0.580568720379147,
+          "pos": [
+            -6.595636732632196,
+            6.500445637413544,
+            -3.2023744109545724
+          ],
+          "q": [
+            -0.03554309209217637,
+            0.4533798774973264,
+            0.018097572673402038,
+            0.8904245353472506
+          ],
+          "fov": 53,
+          "scroll": 4900,
+          "title": "茶室 · The tea room",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "narrow: tea orbit changes pose",
+      "name": "narrow: tea look and zoom stay in place",
       "passed": true
     },
     {
@@ -458,18 +658,18 @@
       "passed": true,
       "detail": {
         "before": {
-          "p": 0.5805406564026016,
-          "desired": 0.5805406564026016,
+          "p": 0.580568720379147,
+          "desired": 0.580568720379147,
           "pos": [
-            -6.5999999999999845,
-            6.5,
-            -3.200000000000023
+            -6.595636732632196,
+            6.500445637413544,
+            -3.2023744109545724
           ],
           "q": [
-            -0.03544371026622841,
-            0.4534651499983877,
-            0.018051145352192266,
-            0.8903860158891632
+            -0.03554309209217637,
+            0.4533798774973264,
+            0.018097572673402038,
+            0.8904245353472506
           ],
           "fov": 53,
           "scroll": 4900,
@@ -502,11 +702,51 @@
       "passed": true
     },
     {
-      "name": "narrow: lookout bounded exterior inspection",
-      "passed": true
+      "name": "narrow: lookout local inspection preserves entry pose",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "scroll": 8440,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        },
+        "entry": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "scroll": 8440,
+          "title": "望楼 · The lookout",
+          "overflow": "hidden"
+        }
+      }
     },
     {
-      "name": "narrow: lookout orbit changes pose",
+      "name": "narrow: lookout look and zoom stay in place",
       "passed": true
     },
     {
