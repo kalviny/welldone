@@ -1,0 +1,16 @@
+[Unit]
+Description=Usugiri Castle static preview
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/zhanghong/workspace/reports/interactive-3d
+ExecStart=/usr/bin/python3 -u -m http.server 8173 --bind 0.0.0.0 --directory /home/zhanghong/workspace/reports/interactive-3d
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0022
+
+[Install]
+WantedBy=default.target
