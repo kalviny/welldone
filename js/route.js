@@ -16,5 +16,5 @@ export class WalkRoute {
   sample(progress){const t=this.parameter(progress),n=t*(WAYPOINTS.length-1),i=Math.min(Math.floor(n),WAYPOINTS.length-2),f=n-i,s=f*f*(3-2*f);return {position:this.positions.getPoint(t),target:this.targets[i].clone().lerp(this.targets[i+1],s)};}
   current(progress){let current=this.anchors[0];for(const a of this.anchors)if(progress>=a.progress-.006)current=a;return current;}
   anchor(id){return this.anchors.find(a=>a.id===id);}
-  audit(colliders){const collisions=[];for(let i=0;i<=2400;i++){const progress=i/2400,p=this.sample(progress).position;const hit=colliders.find(b=>p.x>b.min[0]-.12&&p.x<b.max[0]+.12&&p.y>b.min[1]-.08&&p.y<b.max[1]+.08&&p.z>b.min[2]-.12&&p.z<b.max[2]+.12);if(hit)collisions.push({progress,position:p.toArray(),bounds:hit});}return {samples:2401,collisions};}
+  audit(colliders){const collisions=[];const samples=12001,clearance=.18;for(let i=0;i<samples;i++){const progress=i/(samples-1),p=this.sample(progress).position;const hit=colliders.find(b=>p.x>b.min[0]-clearance&&p.x<b.max[0]+clearance&&p.y>b.min[1]-clearance&&p.y<b.max[1]+clearance&&p.z>b.min[2]-clearance&&p.z<b.max[2]+clearance);if(hit)collisions.push({progress,position:p.toArray(),bounds:hit});}return {samples,clearance,collisions};}
 }

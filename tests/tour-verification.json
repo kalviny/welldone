@@ -1,0 +1,676 @@
+{
+  "url": "http://127.0.0.1:4180/",
+  "checks": [
+    {
+      "name": "desktop: native canvas touch scroll",
+      "passed": true
+    },
+    {
+      "name": "desktop: route including registered screens",
+      "passed": true,
+      "detail": {
+        "samples": 12001,
+        "collisions": []
+      }
+    },
+    {
+      "name": "desktop: destination approach",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination bridge",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination gate",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination guard",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination forecourt",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination entrance",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination corridor",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination tea",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination garden",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination study",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination armory",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination stairs",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination upper",
+      "passed": true
+    },
+    {
+      "name": "desktop: destination lookout",
+      "passed": true
+    },
+    {
+      "name": "desktop: approach bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "desktop: approach orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "desktop: approach exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07399179486334237,
+            0.2708227429063805,
+            0.02088330407120054,
+            0.9595541380394519
+          ],
+          "fov": 41.5,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        },
+        "after": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07399179486334237,
+            0.2708227429063805,
+            0.02088330407120054,
+            0.9595541380394519
+          ],
+          "fov": 41.5,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "desktop: approach focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "desktop: tea bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "desktop: tea orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "desktop: tea exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0.5805406564026016,
+          "desired": 0.5805406564026016,
+          "pos": [
+            -6.5999999999999845,
+            6.5,
+            -3.200000000000023
+          ],
+          "q": [
+            -0.032474605202640276,
+            0.36812277660331905,
+            0.01286661730464634,
+            0.929120805666266
+          ],
+          "fov": 45,
+          "scroll": 5573,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        },
+        "after": {
+          "p": 0.5805208333333334,
+          "desired": 0.5805208333333334,
+          "pos": [
+            -6.601798663053908,
+            6.50005047865595,
+            -3.196750884019382
+          ],
+          "q": [
+            -0.03247464703212204,
+            0.36793373284063907,
+            0.012858988668371407,
+            0.9291957877371803
+          ],
+          "fov": 45,
+          "scroll": 5573,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "desktop: tea focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "desktop: lookout bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "desktop: lookout orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "desktop: lookout exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "scroll": 9600,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        },
+        "after": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 49,
+          "scroll": 9600,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "desktop: lookout focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map stairs",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map armory",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map tea",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map study",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map garden",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map corridor",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map entrance",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map forecourt",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map guard",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map gate",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map bridge",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 1 map approach",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 2 map stairs",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 2 map upper",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 2 map lookout",
+      "passed": true
+    },
+    {
+      "name": "desktop: floor 3 map lookout",
+      "passed": true
+    },
+    {
+      "name": "desktop: latest room replaces transition",
+      "passed": true
+    },
+    {
+      "name": "desktop: room selection exits inspection",
+      "passed": true
+    },
+    {
+      "name": "desktop: resize restores prior scrolling style",
+      "passed": true
+    },
+    {
+      "name": "desktop: Escape during entry cancels safely",
+      "passed": true
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "narrow: native canvas touch scroll",
+      "passed": true
+    },
+    {
+      "name": "narrow: route including registered screens",
+      "passed": true,
+      "detail": {
+        "samples": 12001,
+        "collisions": []
+      }
+    },
+    {
+      "name": "narrow: destination approach",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination bridge",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination gate",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination guard",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination forecourt",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination entrance",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination corridor",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination tea",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination garden",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination study",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination armory",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination stairs",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination upper",
+      "passed": true
+    },
+    {
+      "name": "narrow: destination lookout",
+      "passed": true
+    },
+    {
+      "name": "narrow: approach bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "narrow: approach orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "narrow: approach exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07818649030954798,
+            0.2315886048109619,
+            0.01867699404555944,
+            0.9694868543452301
+          ],
+          "fov": 57,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        },
+        "after": {
+          "p": 0,
+          "desired": 0,
+          "pos": [
+            38,
+            23.65,
+            68
+          ],
+          "q": [
+            -0.07818649030954798,
+            0.2315886048109619,
+            0.01867699404555944,
+            0.9694868543452301
+          ],
+          "fov": 57,
+          "scroll": 0,
+          "title": "山路 · The approach",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "narrow: approach focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 0.5805406564026016,
+          "desired": 0.5805406564026016,
+          "pos": [
+            -6.5999999999999845,
+            6.5,
+            -3.200000000000023
+          ],
+          "q": [
+            -0.03544371026622841,
+            0.4534651499983877,
+            0.018051145352192266,
+            0.8903860158891632
+          ],
+          "fov": 53,
+          "scroll": 4900,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        },
+        "after": {
+          "p": 0.580568720379147,
+          "desired": 0.580568720379147,
+          "pos": [
+            -6.595636732632196,
+            6.500445637413544,
+            -3.2023744109545724
+          ],
+          "q": [
+            -0.03554309209217637,
+            0.4533798774973264,
+            0.018097572673402038,
+            0.8904245353472506
+          ],
+          "fov": 53,
+          "scroll": 4900,
+          "title": "茶室 · The tea room",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "narrow: tea focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "narrow: lookout bounded exterior inspection",
+      "passed": true
+    },
+    {
+      "name": "narrow: lookout orbit changes pose",
+      "passed": true
+    },
+    {
+      "name": "narrow: lookout exact return",
+      "passed": true,
+      "detail": {
+        "before": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "scroll": 8440,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        },
+        "after": {
+          "p": 1,
+          "desired": 1,
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "q": [
+            0.00011992615897857552,
+            0.9978364515356954,
+            0.06571975396288654,
+            -0.001820863373728788
+          ],
+          "fov": 57,
+          "scroll": 8440,
+          "title": "望楼 · The lookout",
+          "overflow": ""
+        }
+      }
+    },
+    {
+      "name": "narrow: lookout focus and roofs restored",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map stairs",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map armory",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map tea",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map study",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map garden",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map corridor",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map entrance",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map forecourt",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map guard",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map gate",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map bridge",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 1 map approach",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 2 map stairs",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 2 map upper",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 2 map lookout",
+      "passed": true
+    },
+    {
+      "name": "narrow: floor 3 map lookout",
+      "passed": true
+    },
+    {
+      "name": "narrow: latest room replaces transition",
+      "passed": true
+    },
+    {
+      "name": "narrow: room selection exits inspection",
+      "passed": true
+    },
+    {
+      "name": "narrow: resize restores prior scrolling style",
+      "passed": true
+    },
+    {
+      "name": "narrow: Escape during entry cancels safely",
+      "passed": true
+    },
+    {
+      "name": "narrow: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "narrow: actual touch scroll crosses canvas",
+      "passed": true
+    },
+    {
+      "name": "narrow: touch cancellation releases capture",
+      "passed": true
+    },
+    {
+      "name": "reduced motion: direct inspection",
+      "passed": true
+    },
+    {
+      "name": "reduced motion: direct return",
+      "passed": true
+    },
+    {
+      "name": "no console / HTTP errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "tests/tour-desktop-inspect.png",
+    "tests/tour-desktop-tea-returned.png",
+    "tests/tour-desktop-lookout-returned.png",
+    "tests/tour-narrow-inspect.png",
+    "tests/tour-narrow-tea-returned.png",
+    "tests/tour-narrow-lookout-returned.png"
+  ],
+  "status": "passed"
+}

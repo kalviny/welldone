@@ -1,14 +1,14 @@
 {
-  "url": "http://127.0.0.1:4174/welldone/",
+  "url": "http://127.0.0.1:4180/",
   "checks": [
     {
       "name": "scene ready",
       "passed": true,
       "detail": {
-        "milliseconds": 1101,
+        "milliseconds": 1111,
         "stats": {
           "calls": 320,
-          "triangles": 2630290,
+          "triangles": 2630326,
           "geometries": 369,
           "textures": 17
         }
@@ -23,10 +23,10 @@
       "passed": true
     },
     {
-      "name": "2401 route positions clear solid walls and posts",
+      "name": "route camera clearance includes solid walls, posts and paper screens",
       "passed": true,
       "detail": {
-        "samples": 2401,
+        "samples": 12001,
         "collisions": []
       }
     },
@@ -54,12 +54,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          -0.0018968409438042677,
-          5.6494309477168585,
-          36.09888999772759
+          1.1102230246251565e-16,
+          5.65,
+          36
         ],
         "mode": "walk",
-        "scroll": 2763,
+        "scroll": 2725,
         "title": "木桥 · The bridge"
       }
     },
@@ -68,12 +68,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          0,
+          1.6408306828597018e-30,
           5.65,
-          29.11336944053612
+          29
         ],
         "mode": "walk",
-        "scroll": 3108,
+        "scroll": 3064,
         "title": "城门 · The gate"
       }
     },
@@ -82,12 +82,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          -4.897796972431549,
+          -6.500000000000002,
           5.65,
-          24.008797979421093
+          23.000000000000007
         ],
         "mode": "walk",
-        "scroll": 3601,
+        "scroll": 3627,
         "title": "守卫室 · The guard room"
       }
     },
@@ -96,12 +96,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          0.001551784271897838,
+          0,
           5.65,
-          16.109533783967898
+          15.999999999999993
         ],
         "mode": "walk",
-        "scroll": 4162,
+        "scroll": 4238,
         "title": "前庭 · The forecourt"
       }
     },
@@ -110,12 +110,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          0,
-          6.811023798741037,
-          10.50402507168771
+          4.4176210692376274e-29,
+          6.8500000000000005,
+          10.399999999999997
         ],
         "mode": "walk",
-        "scroll": 4451,
+        "scroll": 4523,
         "title": "主殿 · The main hall"
       }
     },
@@ -124,12 +124,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          -6.897950362988929,
+          -6.999999999999982,
           6.85,
-          7.011425238802646
+          7.000000000000006
         ],
         "mode": "walk",
-        "scroll": 4963,
+        "scroll": 5028,
         "title": "主回廊 · The timber corridor"
       }
     },
@@ -138,12 +138,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          -6.64066640371588,
-          6.504117860710643,
-          -3.098080553107806
+          -6.5999999999999845,
+          6.5,
+          -3.200000000000023
         ],
         "mode": "walk",
-        "scroll": 5516,
+        "scroll": 5573,
         "title": "茶室 · The tea room"
       }
     },
@@ -152,12 +152,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          -4.079329357146865,
-          6.850246659373475,
-          0.06327381536716703
+          -3.999999999999999,
+          6.85,
+          -2.7000623958887117e-15
         ],
         "mode": "walk",
-        "scroll": 5796,
+        "scroll": 5849,
         "title": "中庭 · The inner garden"
       }
     },
@@ -166,12 +166,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          8.91285294709538,
+          9.000000000000007,
           6.85,
-          -5.059951897125419
+          -5.000000000000002
         ],
         "mode": "walk",
-        "scroll": 7057,
+        "scroll": 7092,
         "title": "书斋 · The study"
       }
     },
@@ -180,12 +180,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          10.00045385299812,
+          10,
           6.85,
-          -11.890522442171797
+          -11.999999999999986
         ],
         "mode": "walk",
-        "scroll": 7410,
+        "scroll": 7440,
         "title": "兵具间 · The armory"
       }
     },
@@ -194,12 +194,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          4.9078684229138405,
+          4.799999999999979,
           6.85,
-          -15.996531403700116
+          -16.000000000000004
         ],
         "mode": "walk",
-        "scroll": 7863,
+        "scroll": 7887,
         "title": "天守楼梯 · The ascent"
       }
     },
@@ -208,12 +208,12 @@
       "passed": true,
       "detail": {
         "pos": [
-          4.818739995689866,
-          11.986054297151439,
-          -23.914144733702557
+          4.799999999999995,
+          12.050000000000004,
+          -24.000000000000007
         ],
         "mode": "walk",
-        "scroll": 8343,
+        "scroll": 8361,
         "title": "上层回廊 · The upper gallery"
       }
     },
@@ -222,9 +222,9 @@
       "passed": true,
       "detail": {
         "pos": [
-          0.7657021944284371,
+          0.8000000000000003,
           17.25,
-          -14.906134594127593
+          -14.800000000000006
         ],
         "mode": "walk",
         "scroll": 9600,
@@ -243,13 +243,13 @@
       "name": "inspection returns to saved pose and scroll",
       "passed": true,
       "detail": {
-        "progress": 0.5745833333333333,
+        "progress": 0.5805208333333334,
         "pos": [
-          -6.5992613846114265,
-          6.50001286768876,
-          -3.201011086234982
+          -6.601798663053908,
+          6.50005047865595,
+          -3.196750884019382
         ],
-        "scroll": 5516,
+        "scroll": 5573,
         "roofs": true
       }
     },
@@ -268,36 +268,36 @@
         {
           "season": "spring",
           "pos": [
-            4.803289730006332,
-            12.045288608628383,
-            -23.993663770157035
+            4.799999999999995,
+            12.050000000000004,
+            -24.000000000000007
           ],
           "color": 14464173
         },
         {
           "season": "summer",
           "pos": [
-            4.803289730006332,
-            12.045288608628383,
-            -23.993663770157035
+            4.799999999999995,
+            12.050000000000004,
+            -24.000000000000007
           ],
           "color": 7508318
         },
         {
           "season": "autumn",
           "pos": [
-            4.803289730006332,
-            12.045288608628383,
-            -23.993663770157035
+            4.799999999999995,
+            12.050000000000004,
+            -24.000000000000007
           ],
           "color": 13866854
         },
         {
           "season": "winter",
           "pos": [
-            4.803289730006332,
-            12.045288608628383,
-            -23.993663770157035
+            4.799999999999995,
+            12.050000000000004,
+            -24.000000000000007
           ],
           "color": 11843752
         }
@@ -425,7 +425,7 @@
       "name": "portrait crop requests a larger image",
       "passed": true,
       "detail": {
-        "source": "http://127.0.0.1:4174/welldone/assets/garden-autumn-1600.webp",
+        "source": "http://127.0.0.1:4180/assets/garden-autumn-1600.webp",
         "natural": 877,
         "box": {
           "x": 0.796875,
@@ -449,50 +449,50 @@
   "errors": [],
   "warnings": [],
   "requests": [
-    "http://127.0.0.1:4174/welldone/",
-    "http://127.0.0.1:4174/welldone/assets/emblem.svg",
-    "http://127.0.0.1:4174/welldone/style.css",
-    "http://127.0.0.1:4174/welldone/js/main.js",
-    "http://127.0.0.1:4174/welldone/js/paint.js",
-    "http://127.0.0.1:4174/welldone/assets/paint/page.webp",
-    "http://127.0.0.1:4174/welldone/vendor/OrbitControls.js",
-    "http://127.0.0.1:4174/welldone/js/route.js",
-    "http://127.0.0.1:4174/welldone/js/config.js",
-    "http://127.0.0.1:4174/welldone/js/world.js",
-    "http://127.0.0.1:4174/welldone/js/paint-palette.js",
-    "http://127.0.0.1:4174/welldone/js/watercolor-pass.js",
-    "http://127.0.0.1:4174/welldone/js/textures.js",
-    "http://127.0.0.1:4174/welldone/vendor/three.module.js",
-    "http://127.0.0.1:4174/welldone/vendor/Reflector.js",
-    "http://127.0.0.1:4174/welldone/js/tea-room.js",
-    "http://127.0.0.1:4174/welldone/assets/paint/plaster.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/wood.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/roof.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/stone.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/foliage.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/wash.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/mountain.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/water.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/paper.webp",
-    "http://127.0.0.1:4174/welldone/assets/paint/cloud.webp",
-    "http://127.0.0.1:4174/welldone/assets/emblem.svg",
-    "http://127.0.0.1:4174/welldone/assets/tea/plaster.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/table-top.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/cedar.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/table-edge.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/shoji-paper.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/tatami.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/sage-cloth.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/blue-slate.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/ceramic.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/olive-canopy.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/footing.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea/paper-tooth.webp",
-    "http://127.0.0.1:4174/welldone/assets/garden-autumn-1600.webp",
-    "http://127.0.0.1:4174/welldone/js/joinery.js",
-    "http://127.0.0.1:4174/welldone/assets/study-640.webp",
-    "http://127.0.0.1:4174/welldone/assets/lookout-640.webp",
-    "http://127.0.0.1:4174/welldone/assets/tea-640.webp"
+    "http://127.0.0.1:4180/",
+    "http://127.0.0.1:4180/style.css",
+    "http://127.0.0.1:4180/assets/emblem.svg",
+    "http://127.0.0.1:4180/assets/paint/page.webp",
+    "http://127.0.0.1:4180/js/main.js",
+    "http://127.0.0.1:4180/vendor/OrbitControls.js",
+    "http://127.0.0.1:4180/js/paint.js",
+    "http://127.0.0.1:4180/js/config.js",
+    "http://127.0.0.1:4180/js/world.js",
+    "http://127.0.0.1:4180/js/route.js",
+    "http://127.0.0.1:4180/js/textures.js",
+    "http://127.0.0.1:4180/js/watercolor-pass.js",
+    "http://127.0.0.1:4180/vendor/Reflector.js",
+    "http://127.0.0.1:4180/js/paint-palette.js",
+    "http://127.0.0.1:4180/js/tea-room.js",
+    "http://127.0.0.1:4180/vendor/three.module.js",
+    "http://127.0.0.1:4180/assets/paint/plaster.webp",
+    "http://127.0.0.1:4180/assets/paint/roof.webp",
+    "http://127.0.0.1:4180/assets/paint/wood.webp",
+    "http://127.0.0.1:4180/assets/paint/stone.webp",
+    "http://127.0.0.1:4180/assets/paint/wash.webp",
+    "http://127.0.0.1:4180/assets/paint/paper.webp",
+    "http://127.0.0.1:4180/assets/paint/foliage.webp",
+    "http://127.0.0.1:4180/assets/paint/water.webp",
+    "http://127.0.0.1:4180/assets/paint/mountain.webp",
+    "http://127.0.0.1:4180/assets/paint/cloud.webp",
+    "http://127.0.0.1:4180/assets/emblem.svg",
+    "http://127.0.0.1:4180/assets/tea/plaster.webp",
+    "http://127.0.0.1:4180/assets/tea/cedar.webp",
+    "http://127.0.0.1:4180/assets/tea/table-top.webp",
+    "http://127.0.0.1:4180/assets/tea/table-edge.webp",
+    "http://127.0.0.1:4180/assets/tea/tatami.webp",
+    "http://127.0.0.1:4180/assets/tea/shoji-paper.webp",
+    "http://127.0.0.1:4180/assets/tea/sage-cloth.webp",
+    "http://127.0.0.1:4180/assets/tea/footing.webp",
+    "http://127.0.0.1:4180/assets/tea/ceramic.webp",
+    "http://127.0.0.1:4180/assets/tea/blue-slate.webp",
+    "http://127.0.0.1:4180/assets/tea/olive-canopy.webp",
+    "http://127.0.0.1:4180/assets/tea/paper-tooth.webp",
+    "http://127.0.0.1:4180/assets/garden-autumn-1600.webp",
+    "http://127.0.0.1:4180/js/joinery.js",
+    "http://127.0.0.1:4180/assets/tea-640.webp",
+    "http://127.0.0.1:4180/assets/lookout-640.webp",
+    "http://127.0.0.1:4180/assets/study-640.webp"
   ],
   "screenshots": [
     "desktop.png"

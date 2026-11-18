@@ -1,0 +1,94 @@
+{
+  "url": "http://127.0.0.1:4180/",
+  "checks": [
+    {
+      "name": "scene ready",
+      "passed": true,
+      "detail": {
+        "milliseconds": 1228,
+        "stats": {
+          "calls": 320,
+          "triangles": 2630290,
+          "geometries": 369,
+          "textures": 17
+        }
+      }
+    },
+    {
+      "name": "below-fold WebP not requested initially",
+      "passed": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "route camera clearance includes solid walls, posts and paper screens",
+      "passed": true,
+      "detail": {
+        "samples": 12001,
+        "collisions": []
+      }
+    },
+    {
+      "name": "route has continuous walkable support",
+      "passed": false,
+      "detail": [
+        {
+          "p": 0.805,
+          "clearance": 0.889999961853027,
+          "position": [
+            8.08255957349203,
+            6.85,
+            -16.037794621797552
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "requests": [
+    "http://127.0.0.1:4180/",
+    "http://127.0.0.1:4180/style.css",
+    "http://127.0.0.1:4180/assets/emblem.svg",
+    "http://127.0.0.1:4180/assets/paint/page.webp",
+    "http://127.0.0.1:4180/js/main.js",
+    "http://127.0.0.1:4180/js/paint.js",
+    "http://127.0.0.1:4180/js/config.js",
+    "http://127.0.0.1:4180/js/route.js",
+    "http://127.0.0.1:4180/vendor/OrbitControls.js",
+    "http://127.0.0.1:4180/js/watercolor-pass.js",
+    "http://127.0.0.1:4180/js/textures.js",
+    "http://127.0.0.1:4180/js/world.js",
+    "http://127.0.0.1:4180/vendor/three.module.js",
+    "http://127.0.0.1:4180/js/paint-palette.js",
+    "http://127.0.0.1:4180/vendor/Reflector.js",
+    "http://127.0.0.1:4180/js/tea-room.js",
+    "http://127.0.0.1:4180/assets/paint/wood.webp",
+    "http://127.0.0.1:4180/assets/paint/plaster.webp",
+    "http://127.0.0.1:4180/assets/paint/roof.webp",
+    "http://127.0.0.1:4180/assets/paint/stone.webp",
+    "http://127.0.0.1:4180/assets/paint/wash.webp",
+    "http://127.0.0.1:4180/assets/paint/paper.webp",
+    "http://127.0.0.1:4180/assets/paint/foliage.webp",
+    "http://127.0.0.1:4180/assets/paint/water.webp",
+    "http://127.0.0.1:4180/assets/paint/mountain.webp",
+    "http://127.0.0.1:4180/assets/paint/cloud.webp",
+    "http://127.0.0.1:4180/assets/emblem.svg"
+  ],
+  "screenshots": [
+    "desktop.png"
+  ],
+  "floorAudit": [
+    {
+      "p": 0.805,
+      "clearance": 0.889999961853027,
+      "position": [
+        8.08255957349203,
+        6.85,
+        -16.037794621797552
+      ]
+    }
+  ]
+}

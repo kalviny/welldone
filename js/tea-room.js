@@ -93,6 +93,7 @@ export function createTeaRoom(root, renderer, colliders) {
       for(let i=0;i<=columns;i++)add(-w/2+i*w/columns,h/2,side*.055,i===0||i===columns?.055:.026,h,.04,m.wood);
       for(let i=0;i<=4;i++)add(0,i*h/4,side*.055,w,i===0||i===4?.06:.032,.045,m.wood);
     }
+    frame.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(frame);colliders.push({min:bounds.min.toArray(),max:bounds.max.toArray(),kind:'tea-lattice'});
     return frame;
   }
   // Warm interior linings sit inside the existing structural walls.

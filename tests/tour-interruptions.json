@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "handoffs use only two destination poses",
+      "passed": true,
+      "detail": {
+        "poses": [
+          "0.800,17.250,-14.800",
+          "48.295,46.239,54.362"
+        ]
+      }
+    },
+    {
+      "name": "every camera cut is fully covered",
+      "passed": true,
+      "detail": [
+        {
+          "mode": "transition",
+          "pos": [
+            48.294742484624244,
+            46.239478268757225,
+            54.36228763735064
+          ],
+          "cover": 1
+        },
+        {
+          "mode": "transition",
+          "pos": [
+            0.8000000000000003,
+            17.25,
+            -14.800000000000006
+          ],
+          "cover": 1
+        }
+      ]
+    },
+    {
+      "name": "entry: newest room wins without scroll lock",
+      "passed": true
+    },
+    {
+      "name": "return: newest room wins without scroll lock",
+      "passed": true
+    },
+    {
+      "name": "drag: newest room wins without scroll lock",
+      "passed": true
+    },
+    {
+      "name": "pending guided scroll resumes at original bookmark",
+      "passed": true,
+      "detail": {
+        "progress": 0.5892776724063126,
+        "desired": 0.6326041666666666,
+        "scroll": 6073
+      }
+    },
+    {
+      "name": "hidden document freezes transition",
+      "passed": true
+    },
+    {
+      "name": "no page errors during interruptions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "slow tea destination holds opening view",
+      "passed": true
+    },
+    {
+      "name": "obsolete tea load cannot replace new destination",
+      "passed": true
+    },
+    {
+      "name": "optional tea asset failure keeps navigation usable",
+      "passed": true
+    },
+    {
+      "name": "can leave failed destination",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}

@@ -51,7 +51,16 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   }
   function wall(x,z,w,h,d,y=5.2,material=m.white){return box(x,y+h/2,z,w,h,d,material,root,true);}
   function post(x,z,y=5.2,h=4){box(x,y+h/2,z,.28,h,.28,m.darkwood,root,true);box(x,y+.08,z,.5,.16,.5,m.stoneLight);}
-  function screen(x,z,w,h=3,orientation='x',y=5.2){const group=new THREE.Group();group.position.set(x,y+h/2,z);if(orientation==='z')group.rotation.y=Math.PI/2;root.add(group);box(0,0,0,w,h,.07,m.paper,group);for(const side of[-1,1]){for(let xx=-w/2;xx<=w/2+.01;xx+=w/6)box(xx,0,side*.06,.035,h,.04,m.darkwood,group);for(let yy=-h/2;yy<=h/2+.01;yy+=h/4)box(0,yy,side*.06,w,.035,.04,m.darkwood,group);}return group;}
+  function screen(x,z,w,h=3,orientation='x',y=5.2){
+    const group=new THREE.Group();group.position.set(x,y+h/2,z);if(orientation==='z')group.rotation.y=Math.PI/2;root.add(group);
+    box(0,0,0,w,h,.07,m.paper,group);
+    for(const side of[-1,1]){
+      for(let xx=-w/2;xx<=w/2+.01;xx+=w/6)box(xx,0,side*.06,.035,h,.04,m.darkwood,group);
+      for(let yy=-h/2;yy<=h/2+.01;yy+=h/4)box(0,yy,side*.06,w,.035,.04,m.darkwood,group);
+    }
+    group.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(group);
+    colliders.push({min:bounds.min.toArray(),max:bounds.max.toArray(),kind:'paper-screen'});return group;
+  }
   function lantern(x,y,z,scale=1){const group=new THREE.Group();group.position.set(x,y,z);group.scale.setScalar(scale);root.add(group);box(0,.4,0,.65,.8,.65,m.paper,group);for(const a of[-.34,.34])for(const b of[-.34,.34])box(a,.4,b,.06,.9,.06,m.darkwood,group);box(0,.88,0,.85,.12,.85,m.roofEdge,group);box(0,-.1,0,.5,.2,.5,m.stone,group);return group;}
   function tatami(x,z,rotation=0){const group=new THREE.Group();group.position.set(x,5.24,z);group.rotation.y=rotation;root.add(group);box(0,0,0,1.8,.09,3.6,m.tatami,group);for(const sign of[-1,1])box(sign*.86,.055,0,.08,.015,3.6,m.cloth,group);}
   function table(x,z,w=2,d=1.2){box(x,5.8,z,w,.16,d,m.lightwood,root,true);for(const a of[-1,1])for(const b of[-1,1])box(x+a*(w/2-.15),5.47,z+b*(d/2-.15),.1,.5,.1,m.darkwood);}
@@ -151,7 +160,9 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
     for(const x of[-w/2,w/2])for(const z of[centerZ-d/2,centerZ,centerZ+d/2])post(x,z,y,4.5);
     // Low sill, upper lintels and open windows leave the view legible.
     for(const sign of[-1,1]){if(y>5.2){wall(0,centerZ+sign*d/2,w,.6,.24,y,m.white);box(0,y+4.2,centerZ+sign*d/2,w,.6,.28,m.white);}else{if(sign<0)wall(0,centerZ+sign*d/2,w,4,.25,y);else{wall(-5.5,-12,5,4,.25,y);wall(5.5,-12,5,4,.25,y);}}box(0,y+.7,centerZ+sign*d/2,w,.12,.32,m.darkwood);}
-    for(const sign of[-1,1]){if(y===5.2&&sign===1){wall(w/2,-23,.25,4,10,y);}else wall(sign*w/2,centerZ,.25,.65,d,y);box(sign*w/2,y+4.2,centerZ,.3,.6,d,m.white);box(sign*w/2,y+.7,centerZ,.28,.12,d,m.darkwood);}
+    for(const sign of[-1,1]){if(y===5.2&&sign===1){wall(w/2,-23,.25,4,10,y);}else wall(sign*w/2,centerZ,.25,.65,d,y);box(sign*w/2,y+4.2,centerZ,.3,.6,d,m.white);if(y===5.2&&sign===1){ // Keep the east doorway at z=-16 open down to the floor.
+      box(w/2,y+.7,-24,.28,.12,12,m.darkwood);box(w/2,y+.7,-12.5,.28,.12,1,m.darkwood);
+    }else box(sign*w/2,y+.7,centerZ,.28,.12,d,m.darkwood);}
     if(y===5.2)roof(0,centerZ,20,22,9.8,1.8,14,16);
     if(y===10.4)roof(0,centerZ,18,20,15,1.8,12,14);
     if(y===15.6)roof(0,centerZ,16,18,20.2,3.2,4,.1);

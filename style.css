@@ -15,3 +15,9 @@ body{background-color:var(--paper);background-image:url('./assets/paint/page.web
 footer{background:#e8e5d6}dialog{background:#f3eedf;border-color:#c1b69a}
 .room-image,.garden-image-wrap{border:1px solid #a9997530;box-shadow:0 2px 0 #fff9ed inset}
 .architecture-art svg{filter:sepia(.12);opacity:.9}.section-heading{border-top-style:solid}
+
+/* Cover camera cuts without blocking room controls or pointer scrolling. */
+.navigation-fade{position:absolute;inset:0;background:var(--paper);opacity:0;pointer-events:none;z-index:3}
+#scene canvas{touch-action:pan-y pinch-zoom}
+
+#floor-plan [role="button"]:focus-visible rect{stroke:var(--sage);stroke-width:3}

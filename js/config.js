@@ -17,7 +17,7 @@ export const WAYPOINTS = [
   {p:[0,5.65,36],t:[0,8,14],id:'bridge',name:'木桥',en:'The bridge',caption:'水面倒映屋檐，脚步落在旧木上。',floor:1},
   {p:[0,5.65,29],t:[0,6.2,16],id:'gate',name:'城门',en:'The gate',caption:'穿过朱红门扉，山风也慢了下来。',floor:1},
   {p:[0,5.65,24],t:[-6,5.8,24]},
-  {p:[-5,5.65,24],t:[-10,6.4,24],id:'guard',name:'守卫室',en:'The guard room',caption:'门畔的灯笼，曾为归人留着光。',floor:1},
+  {p:[-6.5,5.65,23],t:[-11,5.8,23],id:'guard',name:'守卫室',en:'The guard room',caption:'门畔的灯笼，曾为归人留着光。',floor:1},
   {p:[0,5.65,22],t:[2,7,8]},
   {p:[0,5.65,16],t:[4,9,-5],id:'forecourt',name:'前庭',en:'The forecourt',caption:'老树、踏石与深檐，围出一方安静。',floor:1},
   {p:[0,5.65,13],t:[0,7,4]},

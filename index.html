@@ -37,7 +37,7 @@
           <div class="scroll-cue"><span class="mouse"></span><span>SCROLL TO WANDER</span><i>↓</i></div>
           <button id="inspect" class="inspect-button"><span>⤢</span> 自由观察</button>
         </div>
-        <div id="inspection-bar" class="inspection-bar" hidden><span>自由观察 <small>拖动旋转 · 滚轮 / 双指缩放</small></span><button id="return-walk">返回漫游 ↗</button></div>
+        <div id="inspection-bar" class="inspection-bar" hidden><span>建筑观察 <small>拖动旋转 · 滚轮 / 双指缩放</small></span><button id="return-walk">返回漫游 ↗</button></div>
         <div class="route-line"><span id="route-progress"></span></div>
         <nav id="chapter-dots" class="chapter-dots" aria-label="漫游章节"></nav>
       </div>
@@ -61,7 +61,7 @@
 
   <footer><a class="brand" href="#"><img src="./assets/emblem.svg" width="32" height="32" alt=""><span>薄霧城<small>USUGIRI CASTLE</small></span></a><p>山は変わらず、季節は巡る。<small>A place imagined. A moment to wander.</small></p><a href="#">回到山路 ↑</a><div class="footer-bottom"><span>AN ORIGINAL WEBGL EXPERIENCE · 2026</span><span>架空建筑 · 手绘质感 · 实时三维</span></div></footer>
 
-  <dialog id="map-dialog"><div class="map-header"><div><span class="eyebrow">A GUIDE TO USUGIRI</span><h2>城内案内</h2></div><button id="close-map" aria-label="关闭平面图">✕</button></div><div class="floor-tabs" role="tablist" aria-label="楼层"><button data-floor="1" role="tab" aria-selected="true">一层 · 庭与殿</button><button data-floor="2" role="tab" aria-selected="false">二层 · 回廊</button><button data-floor="3" role="tab" aria-selected="false">三层 · 望楼</button></div><div id="floor-plan"></div><p class="map-footnote"><span class="current-dot"></span> 当前所在 <span>点击空间，沿路线抵达</span></p></dialog>
+  <dialog id="map-dialog"><div class="map-header"><div><span class="eyebrow">A GUIDE TO USUGIRI</span><h2>城内案内</h2></div><button id="close-map" aria-label="关闭平面图">✕</button></div><div class="floor-tabs" role="tablist" aria-label="楼层"><button data-floor="1" role="tab" aria-selected="true">一层 · 庭与殿</button><button data-floor="2" role="tab" aria-selected="false">二层 · 回廊</button><button data-floor="3" role="tab" aria-selected="false">三层 · 望楼</button></div><div id="floor-plan"></div><p class="map-footnote"><span class="current-dot"></span> 当前所在 <span>点击空间，淡出后抵达</span></p></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
   <noscript><div class="noscript">请启用 JavaScript，进入薄霧城的三维漫游。</div></noscript>
   <script type="module" src="./js/main.js"></script>
