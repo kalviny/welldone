@@ -4,6 +4,9 @@ import { Reflector } from '../vendor/Reflector.js';
 import { createTeaRoom } from './tea-room.js';
 import { SETTINGS, SEASONS } from './config.js';
 import { random, yieldFrame } from './textures.js';
+import { createPaintedFoliageGeometry } from './painted-foliage.js';
+import { paintReflection } from './painted-reflection.js';
+import { createPaintedStoneGeometry } from './painted-stone.js';
 
 export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=>{}){
   const scene=new THREE.Scene();scene.background=new THREE.Color(SEASONS.autumn.sky);scene.fog=new THREE.Fog(SEASONS.autumn.fog,75,260);
@@ -12,19 +15,17 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   const sun=new THREE.DirectionalLight(0xffedcb,2.1);sun.position.set(-36,64,35);sun.castShadow=true;sun.shadow.mapSize.set(SETTINGS.shadowSize,SETTINGS.shadowSize);Object.assign(sun.shadow.camera,{left:-55,right:55,top:55,bottom:-55,near:1,far:150});sun.shadow.bias=-.0007;sun.shadow.normalBias=.04;sun.shadow.radius=5;sun.target.position.set(0,0,-8);scene.add(sun,sun.target);
   const fill=new THREE.DirectionalLight(0xb7cccf,.65);fill.position.set(25,20,-35);scene.add(fill);
   const mat=(color,kind='wash')=>paintMaterial(color,kind);
-  const m={wood:mat(0xc3996c,'wood'),darkwood:mat(0x816043,'wood'),lightwood:mat(0xd4af79,'wood'),white:mat(0xffefdb,'plaster'),roof:mat(0x93a3a6,'roof'),roofEdge:mat(0x75898d,'roof'),stone:mat(0xbab6ad,'stone'),stoneLight:mat(0xd1c7b2,'stone'),red:mat(0xb58068,'wood'),metal:mat(0x665645),paper:mat(0xeee3bd,'plaster'),tatami:mat(0xc5c191,'tatami'),moss:mat(SEASONS.autumn.grass,'wash'),leaf:mat(SEASONS.autumn.canopy,'foliage'),leaf2:mat(SEASONS.autumn.secondary,'foliage'),pine:mat(0x929b77,'foliage'),bark:mat(0x997850,'wood'),gravel:mat(0xc4c5ae),snow:mat(0xeaf0e6),cloth:mat(0x768473),gold:mat(0xc3a879)};
-  const geo={box:new THREE.BoxGeometry(1,1,1),sphere:new THREE.IcosahedronGeometry(1,innerWidth<650?2:3),rock:new THREE.DodecahedronGeometry(1,0),cylinder:new THREE.CylinderGeometry(1,1,1,8)};
-  // Lobed crowns use a shared mesh: a softly irregular core and small overlapping
-  // volumes on its outline, giving foliage real depth from any orbit angle.
-  const foliagePositions=[],foliageNormals=[];
-  const addLobe=(x,y,z,r,detail)=>{const g=new THREE.IcosahedronGeometry(r,detail);const p=g.attributes.position,n=g.attributes.normal;for(let i=0;i<p.count;i++){foliagePositions.push(p.getX(i)+x,p.getY(i)+y,p.getZ(i)+z);foliageNormals.push(n.getX(i),n.getY(i),n.getZ(i));}g.dispose();};
-  addLobe(0,0,0,.83,2);
-  for(let i=0;i<(innerWidth<650?6:14);i++){const a=i*2.399,y=Math.sin(i*1.7)*.55,r=Math.sqrt(1-y*y);addLobe(Math.cos(a)*r*.76,y*.76,Math.sin(a)*r*.76,.28+(i%3)*.055,innerWidth<650?0:1);}
-  geo.foliage=new THREE.BufferGeometry();geo.foliage.setAttribute('position',new THREE.Float32BufferAttribute(foliagePositions,3));geo.foliage.setAttribute('normal',new THREE.Float32BufferAttribute(foliageNormals,3));geo.foliage.computeBoundingSphere();
+  const m={wood:mat(0xe0b386,'wood'),darkwood:mat(0xcc976c,'wood'),lightwood:mat(0xe8c797,'wood'),white:mat(0xfaf5e9,'plaster'),roof:mat(0xbacecf,'roof'),roofEdge:mat(0x8ca5aa,'roof'),stone:mat(0xb9bdb5,'stone'),stoneLight:mat(0xe9e4d6,'stone'),red:mat(0xc78b62,'wood'),metal:mat(0x776a57),paper:mat(0xf5edcf,'plaster'),tatami:mat(0xd2cca6,'tatami'),floor:mat(0xe3bb91,'floor'),floorJoint:mat(0xcfaf8b,'floor'),moss:mat(SEASONS.autumn.grass,'moss'),leaf:mat(SEASONS.autumn.canopy,'foliage'),leaf2:mat(SEASONS.autumn.secondary,'foliage'),leafOchre:mat(SEASONS.autumn.ochre,'foliage'),pine:mat(0xa9b685,'foliage'),bark:mat(0xb68b60,'bark'),gravel:mat(0xc8ccba),snow:mat(0xf2f3e9),cloth:mat(0x8ca49b),gold:mat(0xd5b580)};
+  // Roof sheets carry a metric along-surface map; their ribs keep world mapping.
+  m.roof.userData.paintUv=true;
+  const geo={box:new THREE.BoxGeometry(1,1,1),sphere:new THREE.IcosahedronGeometry(1,innerWidth<650?2:3),rock:createPaintedStoneGeometry(2),rock1:createPaintedStoneGeometry(7),rock2:createPaintedStoneGeometry(13),cylinder:new THREE.CylinderGeometry(1,1,1,8)};
+  geo.foliage=createPaintedFoliageGeometry(innerWidth<650);
+  for(const material of [m.leaf,m.leaf2,m.leafOchre,m.pine]){material.vertexColors=true;material.side=THREE.DoubleSide;}
+  m.stone.vertexColors=m.stoneLight.vertexColors=true;
   for(let variant=0;variant<3;variant++){
     const points=[[-.49,-.36],[-.36,-.49],[.35,-.46],[.49,-.28],[.48,.34],[.32,.49],[-.36,.47],[-.49,.28]];
     const shape=new THREE.Shape();points.forEach(([x,y],i)=>{const px=x+Math.sin(i*3+variant)*.025,py=y+Math.cos(i*2+variant)*.025;i?shape.lineTo(px,py):shape.moveTo(px,py);});shape.closePath();
-    const g=new THREE.ExtrudeGeometry(shape,{depth:.93,bevelEnabled:true,bevelSegments:1,steps:1,bevelSize:.025,bevelThickness:.035});g.translate(0,0,-.465);geo['ashlar'+variant]=g;geo['paving'+variant]=g.clone().rotateX(Math.PI/2);
+    const g=new THREE.ExtrudeGeometry(shape,{depth:.93,bevelEnabled:true,bevelSegments:1,steps:1,bevelSize:.025,bevelThickness:.035});g.translate(0,0,-.465);g.setAttribute('color',new THREE.Float32BufferAttribute(new Float32Array(g.attributes.position.count*3).fill(1),3));geo['ashlar'+variant]=g;geo['paving'+variant]=g.clone().rotateX(Math.PI/2);
   }
   geo.ashlar=geo.ashlar0;
   const colliders=[],roofs=[],deciduous=[],snowMeshes=[],waterMeshes=[],reflectionMeshes=[];
@@ -35,13 +36,13 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   const batches=new Map();
   function instance(kind,x,y,z,sx,sy,sz,rotation=0){if(!batches.has(kind))batches.set(kind,[]);batches.get(kind).push({x,y,z,sx,sy,sz,rotation});}
   function flush(){const dummy=new THREE.Object3D();for(const[k,items]of batches){if(!items.length)continue;const parts=k.split(':'),g=geo[parts[0]]||geo.box,ma=m[parts[1]]||m.stone;const o=new THREE.InstancedMesh(g,ma,items.length);items.forEach((a,i)=>{dummy.position.set(a.x,a.y,a.z);dummy.scale.set(a.sx,a.sy,a.sz);dummy.rotation.set(0,a.rotation,0);dummy.updateMatrix();o.setMatrixAt(i,dummy.matrix);if(parts[1]==='stone'||parts[1]==='stoneLight'){const tint=(parts[1]==='stoneLight'?.92:.80)+(.5+.5*Math.sin(a.x*27.1+a.y*13.7+a.z*5.1))*(parts[1]==='stoneLight'?.16:.32);o.setColorAt(i,new THREE.Color().setRGB(tint,tint*(.98+.02*Math.cos(a.x)),tint*.96));}});o.castShadow=true;o.receiveShadow=true;root.add(o);}batches.clear();}
-  function floor(x,z,w,d,y=5.2,material=m.wood){box(x,y-.15,z,w,.3,d,material);for(let xx=x-w/2+.6;xx<x+w/2;xx+=1.2){instance('box:darkwood',xx,y+.008,z,.018,.012,d);} }
+  function floor(x,z,w,d,y=5.2,material=m.floor){box(x,y-.15,z,w,.3,d,material);for(let xx=x-w/2+.6;xx<x+w/2;xx+=1.2){instance('box:floorJoint',xx,y+.008,z,.012,.012,d);} }
   function roof(x,z,w,d,y,h=2.2,innerW=0,innerD=0){
     const group=new THREE.Group();root.add(group);roofs.push(group);
     const tileRandom=random(Math.round((x+50)*71+(z+80)*31+w*17));m.roofEdge.vertexColors=true;
     const iw=innerW/2,id=innerD/2,ow=w/2,od=d/2;
     const sides=[[[x-ow,z-od],[x+ow,z-od],[x+iw,z-id],[x-iw,z-id]],[[x+ow,z-od],[x+ow,z+od],[x+iw,z+id],[x+iw,z-id]],[[x+ow,z+od],[x-ow,z+od],[x-iw,z+id],[x+iw,z+id]],[[x-ow,z+od],[x-ow,z-od],[x-iw,z-id],[x-iw,z+id]]];
-    sides.forEach((v,side)=>{const pos=[],uv=[],inds=[];const steps=6;for(let j=0;j<=steps;j++){const t=j/steps,yy=y+h*(1-Math.pow(1-t,1.6))+.13*Math.pow(1-t,9);for(let k=0;k<2;k++){const from=v[k],to=v[3-k];pos.push(THREE.MathUtils.lerp(from[0],to[0],t),yy,THREE.MathUtils.lerp(from[1],to[1],t));uv.push(k*(side%2?d:w)/3,t*2);}}for(let j=0;j<steps;j++){let a=j*2;inds.push(a,a+2,a+1,a+1,a+2,a+3);}const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(inds);g.computeVertexNormals();m.roof.side=THREE.DoubleSide;const o=new THREE.Mesh(g,m.roof);o.castShadow=true;o.receiveShadow=true;group.add(o);
+    sides.forEach((v,side)=>{const pos=[],uv=[],inds=[];const steps=6;for(let j=0;j<=steps;j++){const t=j/steps,yy=y+h*(1-Math.pow(1-t,1.6))+.13*Math.pow(1-t,9);for(let k=0;k<2;k++){const from=v[k],to=v[3-k];pos.push(THREE.MathUtils.lerp(from[0],to[0],t),yy,THREE.MathUtils.lerp(from[1],to[1],t));const surfaceX=THREE.MathUtils.lerp(from[0],to[0],t),surfaceZ=THREE.MathUtils.lerp(from[1],to[1],t);const tangent=side%2?surfaceZ-z:surfaceX-x;const run=t*(side%2?(w-innerW)/2:(d-innerD)/2);uv.push(tangent,Math.hypot(run,yy-y-.13));}}for(let j=0;j<steps;j++){let a=j*2;inds.push(a,a+2,a+1,a+1,a+2,a+3);}const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));g.setIndex(inds);g.computeVertexNormals();m.roof.side=THREE.DoubleSide;const o=new THREE.Mesh(g,m.roof);o.castShadow=true;o.receiveShadow=true;group.add(o);
       // Raised eaves and sparse tile seams retain a crisp roof silhouette.
       beam([v[0][0],y+.13,v[0][1]],[v[1][0],y+.13,v[1][1]],.10,m.roofEdge,group);
       const edgeLength=Math.hypot(v[1][0]-v[0][0],v[1][1]-v[0][1]);for(let q=0;q<=edgeLength;q+=.59+tileRandom()*.19){const a=q/edgeLength;const fx=THREE.MathUtils.lerp(v[0][0],v[1][0],a),fz=THREE.MathUtils.lerp(v[0][1],v[1][1],a),tx=THREE.MathUtils.lerp(v[3][0],v[2][0],a),tz=THREE.MathUtils.lerp(v[3][1],v[2][1],a);for(let j=0;j<3;j++){const t0=j/3,t1=(j+1)/3;if(tileRandom()<.055)continue;const seam=beam([THREE.MathUtils.lerp(fx,tx,t0),y+h*(1-(1-t0)**1.6)+.14,THREE.MathUtils.lerp(fz,tz,t0)],[THREE.MathUtils.lerp(fx,tx,t1),y+h*(1-(1-t1)**1.6)+.14,THREE.MathUtils.lerp(fz,tz,t1)],.012+tileRandom()*.014,m.roofEdge,group);const tint=.78+tileRandom()*.38;seam.userData.paintTint=[tint,tint,tint];}}
@@ -64,16 +65,16 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   function lantern(x,y,z,scale=1){const group=new THREE.Group();group.position.set(x,y,z);group.scale.setScalar(scale);root.add(group);box(0,.4,0,.65,.8,.65,m.paper,group);for(const a of[-.34,.34])for(const b of[-.34,.34])box(a,.4,b,.06,.9,.06,m.darkwood,group);box(0,.88,0,.85,.12,.85,m.roofEdge,group);box(0,-.1,0,.5,.2,.5,m.stone,group);return group;}
   function tatami(x,z,rotation=0){const group=new THREE.Group();group.position.set(x,5.24,z);group.rotation.y=rotation;root.add(group);box(0,0,0,1.8,.09,3.6,m.tatami,group);for(const sign of[-1,1])box(sign*.86,.055,0,.08,.015,3.6,m.cloth,group);}
   function table(x,z,w=2,d=1.2){box(x,5.8,z,w,.16,d,m.lightwood,root,true);for(const a of[-1,1])for(const b of[-1,1])box(x+a*(w/2-.15),5.47,z+b*(d/2-.15),.1,.5,.1,m.darkwood);}
-  function tree(x,y,z,s=1,type='maple',seed=1){const r=random(seed),group=new THREE.Group();group.position.set(x,y,z);group.scale.setScalar(s);root.add(group);beam([0,0,0],[.3,3.8,0],.22,m.bark,group);const crowns=[];for(let i=0;i<7;i++){const angle=i*2.399,len=1.3+r()*1.5,top=2.8+r()*2.2;const dx=Math.cos(angle)*len,dz=Math.sin(angle)*len;beam([.1,1.4+i*.23,0],[dx,top,dz],.07+i*.005,m.bark,group);if(type==='pine'){const crown=mesh(geo.foliage,m.pine,dx,top+.35+(i%3)*.09,dz,1.52+.17*(.5+.5*Math.sin(i*3)),.50+.18*(.5+.5*Math.cos(i*2)),1.24+.18*(.5+.5*Math.sin(i*5)),group);crowns.push(crown);}else{const crown=mesh(geo.foliage,i%2?m.leaf:m.leaf2,dx,top+.3,dz,1.6+r()*.5,.7+r()*.3,1.3+r()*.5,group);crowns.push(crown);deciduous.push(crown);}}
-    for(const crown of crowns){crown.material.vertexColors=true;const tint=.84+r()*.28;crown.userData.paintTint=[tint,tint*(.97+r()*.04),tint*.96];}
+  function tree(x,y,z,s=1,type='maple',seed=1){const r=random(seed),group=new THREE.Group();group.position.set(x,y,z);group.scale.setScalar(s);root.add(group);beam([0,0,0],[.3,3.8,0],.22,m.bark,group);const crowns=[];for(let i=0;i<7;i++){const angle=i*2.399,len=1.3+r()*1.5,top=2.8+r()*2.2;const dx=Math.cos(angle)*len,dz=Math.sin(angle)*len;beam([.1,1.4+i*.23,0],[dx,top,dz],.07+i*.005,m.bark,group);if(type==='pine'){const crown=mesh(geo.foliage,m.pine,dx,top+.35+(i%3)*.09,dz,1.52+.17*(.5+.5*Math.sin(i*3)),.50+.18*(.5+.5*Math.cos(i*2)),1.24+.18*(.5+.5*Math.sin(i*5)),group);crowns.push(crown);}else{const pigment=(i+seed)%5===0?m.leafOchre:i%2?m.leaf:m.leaf2;const crown=mesh(geo.foliage,pigment,dx,top+.3,dz,1.6+r()*.5,.7+r()*.3,1.3+r()*.5,group);crown.rotation.y=Math.sin(seed*3.17+i*13.1)*.30;crowns.push(crown);deciduous.push(crown);}}
+    for(const crown of crowns){crown.material.vertexColors=true;const tint=.93+r()*.12;crown.userData.paintTint=[tint,tint*(.985+r()*.02),tint*.98];}
     const snow=mesh(geo.sphere,m.snow,0,.03,0,2.3,.07,1.9,group);snow.visible=false;snowMeshes.push(snow);
     return {group,crowns};
   }
   function water(x,y,z,w,d){
     const material=mat(0x99afb0,'water');material.transparent=true;material.opacity=.91;material.depthWrite=false;material.side=THREE.DoubleSide;
     material.uniforms={uTime:{value:0},uColor:{value:material.color}};
-    const compile=material.onBeforeCompile;material.onBeforeCompile=shader=>{compile(shader);shader.uniforms.uTime=material.uniforms.uTime;shader.fragmentShader='uniform float uTime;\n'+shader.fragmentShader;shader.fragmentShader=shader.fragmentShader.replace('vec3 pigment=', 'q.x+=sin(q.z*9.+uTime*.22)*.045; q.z+=sin(q.x*7.-uTime*.17)*.025; vec3 pigment=');};
-    material.customProgramCacheKey=()=> 'panorama-water-v1';
+    const compile=material.onBeforeCompile;material.onBeforeCompile=shader=>{compile(shader);shader.uniforms.uTime=material.uniforms.uTime;shader.fragmentShader='uniform float uTime;\n'+shader.fragmentShader;shader.fragmentShader=shader.fragmentShader.replace('vec2 coordX=', 'q.x+=sin(q.z*9.+uTime*.22)*.025; q.z+=sin(q.x*7.-uTime*.17)*.018; vec2 coordX=');};
+    material.customProgramCacheKey=()=> 'courtyard-water-wash-v2';
     const g=new THREE.PlaneGeometry(w,d);g.rotateX(-Math.PI/2);const o=mesh(g,material,x,y,z);o.castShadow=false;waterMeshes.push(o);return o;
   }
   onProgress('描绘远山与石垣');
@@ -87,10 +88,8 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   box(0,-2.2,80,150,2,80,m.moss);box(-65,-6,-20,80,8,170,m.moss);box(65,-6,-20,80,8,170,m.moss);box(0,-3,-95,170,7,70,m.moss);
   const moat=new Reflector(new THREE.PlaneGeometry(100,13),{color:0xa3b7bb,textureWidth:innerWidth<650?256:512,textureHeight:innerWidth<650?256:512,clipBias:.003});
   moat.rotation.x=-Math.PI/2;moat.position.set(0,.895,35.7);root.add(moat);reflectionMeshes.push(moat);
-  moat.material.uniforms.uTime={value:0};
-  moat.material.fragmentShader='uniform float uTime;\n'+moat.material.fragmentShader;
-  moat.material.fragmentShader=moat.material.fragmentShader.replace('vec4 base = texture2DProj( tDiffuse, vUv );', 'vec4 ripple=vUv; ripple.xy+=vec2(sin(vUv.y/vUv.w*53.+uTime*.2),cos(vUv.x/vUv.w*47.))*vUv.w*.004; vec4 base=texture2DProj(tDiffuse,ripple)*.5+texture2DProj(tDiffuse,ripple+vec4(.003*vUv.w,0.,0.,0.))*.25+texture2DProj(tDiffuse,ripple-vec4(.003*vUv.w,0.,0.,0.))*.25;');
-  const moatWater=water(0,.91,35.7,100,13);moatWater.material.opacity=.58;
+  paintReflection(moat,.7);
+  const moatWater=water(0,.91,35.7,100,13);moatWater.material.opacity=.34;
 
   for(let z=-34;z<27;z+=1.85)for(let x=-21.5;x<22;x+=2.35){const offset=Math.sin(x*2+z)*.12;instance('paving'+(Math.abs(Math.round(x+z))%3)+':stoneLight',x+offset+(Math.round(z/1.85)%2)*1.1,4.085,z,2.28,.045,1.79,offset*.22);}
   // Actual sloped approach; the camera follows this ridge at eye height.
@@ -131,7 +130,7 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   roof(0,7,33,10,9.3,2.1,16,.1);roof(-6.1,-3,4.2,17,9.3,1.1,.1,10);roof(10,-4,12,20,9.3,2.2,.1,13);
   // Replace only the tea room's interior; the shared U-shaped hall stays connected.
   const tea=createTeaRoom(root,renderer,colliders);
-  root.children.forEach(o=>{if(o.isMesh&&o.material===m.darkwood&&o.position.x<=-5&&o.position.x>=-15&&o.position.z>=-10&&o.position.z<=3){o.material=tea.materials.wood;o.castShadow=false;}});
+  root.children.forEach(o=>{if(o.isMesh&&o.material===m.darkwood&&o.position.x<=-5&&o.position.x>=-15&&o.position.z>=-10&&o.position.z<=3){o.castShadow=false;}});
   screen(-5,-7,3.5,3,'z');screen(-5,2.4,1.1,3,'z');
   // Study door at z=-7.5 and long view through to the same garden.
   screen(5,.2,3,3,'z');screen(5,-6,1.4,3,'z');screen(14.8,-4,3.5,3,'z');table(12,-3,2.6,1.5);box(12,5.42,-4.6,1,.15,.8,m.cloth);
@@ -142,13 +141,28 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   box(7.5,5.6,-12.5,1.5,.8,1.1,m.darkwood);mesh(geo.sphere,m.metal,7.5,6.3,-12.5,.65,.75,.4);mesh(geo.sphere,m.metal,7.5,7.2,-12.5,.4,.3,.35);lantern(13,5.3,-16,1);
   // Quiet inner garden, walkable raised perimeter and pond.
   box(0,4.98,-4.1,7.1,.4,10.3,m.moss);box(.4,5.13,-4,4.6,.1,5.5,m.stone);
-  const pond=new Reflector(new THREE.PlaneGeometry(4.2,5.1),{color:0x6e978c,textureWidth:innerWidth<650?256:512,textureHeight:innerWidth<650?256:512,clipBias:.003});pond.rotation.x=-Math.PI/2;pond.position.set(.4,5.205,-4);root.add(pond);pond.material.uniforms.uTime={value:0};pond.material.fragmentShader=pond.material.fragmentShader.replace('void main() {','uniform float uTime;\nvoid main() {').replace('texture2DProj( tDiffuse, vUv )','texture2DProj( tDiffuse, vUv + vec4(sin(vUv.y * 19. + uTime * .3) * .0008, cos(vUv.x * 23. + uTime * .2) * .0007, 0., 0.) )');
-  const pondWash=water(.4,5.215,-4,4.2,5.1);pondWash.material.opacity=.28;pondWash.material.color.setHex(0x9aafa9);
+  const pond=new Reflector(new THREE.PlaneGeometry(4.2,5.1),{color:0x6e978c,textureWidth:innerWidth<650?256:512,textureHeight:innerWidth<650?256:512,clipBias:.003});pond.rotation.x=-Math.PI/2;pond.position.set(.4,5.205,-4);root.add(pond);paintReflection(pond,1,true);
+  const pondWash=water(.4,5.215,-4,4.2,5.1);pondWash.material.opacity=.09;pondWash.material.color.setHex(0x8eaaa2);
   const gardenTree=tree(1.6,5.2,-7,1.05,'maple',8);tree(-1.7,5.2,1.4,.6,'pine',88);
-  // Clipped reflection proxy renders beneath the water, with subdued opacity.
+  // Low, translucent pigment shadows sit on the actual lawn. Their centers
+  // follow the tree roots, and remain in place while navigating or reflecting.
+  const groundShadeCanvas=document.createElement('canvas');groundShadeCanvas.width=groundShadeCanvas.height=128;
+  const shadeContext=groundShadeCanvas.getContext('2d'),groundGradient=shadeContext.createRadialGradient(64,64,4,64,64,63);
+  groundGradient.addColorStop(0,'rgba(66,79,53,.36)');groundGradient.addColorStop(.38,'rgba(76,89,57,.24)');groundGradient.addColorStop(1,'rgba(76,89,57,0)');
+  shadeContext.fillStyle=groundGradient;shadeContext.fillRect(0,0,128,128);
+  const groundShadeMap=new THREE.CanvasTexture(groundShadeCanvas);groundShadeMap.colorSpace=THREE.SRGBColorSpace;
+  const groundShadeMaterial=new THREE.MeshBasicMaterial({map:groundShadeMap,transparent:true,depthWrite:false,toneMapped:false,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1});
+  for(const [x,z,w,d] of [[-2.1,1.25,2.9,1.35],[1.1,-7.0,3.7,2.9],[-1.7,1.4,.65,.55],[1.6,-7,.85,.7]]){
+    const groundShade=new THREE.Mesh(new THREE.PlaneGeometry(w,d),groundShadeMaterial);groundShade.rotation.x=-Math.PI/2;groundShade.position.set(x,5.186,z);groundShade.receiveShadow=false;root.add(groundShade);
+  }
   // The reflector uses the actual courtyard geometry, including seasonal foliage.
-  for(let i=0;i<12;i++){const a=i*.63;mesh(geo.rock,m.stoneLight,.4+Math.cos(a)*2.6,5.2,-4+Math.sin(a)*3, .35+(i%3)*.1,.25,.4);}
-  for(let i=0;i<3;i++){const fish=mesh(geo.sphere,mat(i===1?0xd0ba8f:0x9e5f3a),-.5+i*.8,5.23,-3-i*.5,.1,.025,.3);fish.castShadow=false;}
+  for(let i=0;i<12;i++){const a=i*.63,nearArc=i>=2&&i<=5;const rock=mesh(geo[['rock','rock1','rock2'][i%3]],m.stoneLight,.4+Math.cos(a)*(nearArc?2.77:2.6),nearArc?5.15:5.2,-4+Math.sin(a)*(nearArc?3.17:3), .35+(i%3)*.1,(.26+(i%4)*.012)*(nearArc?.97:1),.4);rock.rotation.y=a*.71;}
+  // Broad, rounded and slightly cupped leaves sit on the actual pond plane.
+  const floatingLeafGeometry=new THREE.BufferGeometry(),floatingPositions=[];
+  const leafOutline=[[0,-1],[-.24,-.90],[-.49,-.57],[-.57,-.13],[-.47,.48],[-.22,.90],[.03,1],[.28,.85],[.50,.42],[.55,-.16],[.37,-.66],[.16,-.91]];
+  for(let i=0;i<leafOutline.length;i++)for(const [x,z]of [[0,0],leafOutline[i],leafOutline[(i+1)%leafOutline.length]])floatingPositions.push(x,.055*(1-Math.abs(x))*(1-Math.abs(z)),z);
+  floatingLeafGeometry.setAttribute('position',new THREE.Float32BufferAttribute(floatingPositions,3));floatingLeafGeometry.computeVertexNormals();
+  for(let i=0;i<3;i++){const material=mat(i===1?0xf2d99d:0xca8150,'foliage');material.side=THREE.DoubleSide;const leaf=mesh(floatingLeafGeometry,material,-.5+i*.8,5.23,-3-i*.5,.25,1,.34);leaf.rotation.y=-.24+i*.09;leaf.castShadow=false;}
   lantern(-2.9,5.4,-7.4,.8);
   flush();await yieldFrame();
   onProgress('沿木阶向望楼延伸');
@@ -184,14 +198,58 @@ export async function buildWorld(renderer, onProgress=()=>{}, onPreview=async()=
   // A neighbouring turret supplies architectural depth without blocking the route.
   box(-19,6.5,-25,5,5,7,m.white);roof(-19,-25,8,10,9.1,2);for(const x of[-21,-17])post(x,-22,4,5);tree(-24,4,-10,1.2,'pine',52);tree(19,4,-20,1.1,'maple',31);
   const leafGeo=new THREE.BufferGeometry();leafGeo.setAttribute('position',new THREE.Float32BufferAttribute([0,.1,0,-.07,0,0,0,-.12,0,.07,0,0],3));leafGeo.setIndex([0,1,2,0,2,3]);leafGeo.computeVertexNormals();const leafMat=new THREE.MeshBasicMaterial({color:SEASONS.autumn.particle,side:THREE.DoubleSide});const particles=new THREE.InstancedMesh(leafGeo,leafMat,SETTINGS.leafCount);particles.frustumCulled=false;scene.add(particles);const particleData=Array.from({length:SETTINGS.leafCount},()=>({x:(r()-.5)*65,y:r()*18,z:-30+r()*95,s:.65+r()*1.2,speed:.15+r()*.3}));const dummy=new THREE.Object3D();
-  function setSeason(name){const s=SEASONS[name];scene.background.setHex(s.sky);scene.fog.color.setHex(s.fog);sun.color.setHex(s.sun);m.leaf.color.setHex(s.canopy);m.leaf2.color.setHex(s.secondary);m.moss.color.setHex(s.grass);leafMat.color.setHex(s.particle);snowMeshes.forEach(o=>o.visible=name==='winter');deciduous.forEach(o=>{o.visible=name!=='winter';});scene.userData.season=name;renderer.shadowMap.needsUpdate=true;}
+  function setSeason(name){const s=SEASONS[name];scene.background.setHex(s.sky);scene.fog.color.setHex(s.fog);sun.color.setHex(s.sun);m.leaf.color.setHex(s.canopy);m.leaf2.color.setHex(s.secondary);m.leafOchre.color.setHex(s.ochre||s.canopy);m.leaf.userData.paintBlossom.value=m.leafOchre.userData.paintBlossom.value=name==='spring'?1:0;m.moss.color.setHex(s.grass);leafMat.color.setHex(s.particle);snowMeshes.forEach(o=>o.visible=name==='winter');deciduous.forEach(o=>{o.visible=name!=='winter';});scene.userData.season=name;renderer.shadowMap.needsUpdate=true;}
   function update(time,reduced=false){moat.material.uniforms.uTime.value=reduced?0:time;pond.material.uniforms.uTime.value=reduced?0:time;waterMeshes.forEach(o=>o.material.uniforms.uTime.value=reduced?0:time);particleData.forEach((p,i)=>{const t=reduced?0:time;dummy.position.set(p.x+Math.sin(t*.13+i)*1.6,p.y-(t*p.speed)%20+2,p.z+Math.cos(t*.1+i)*.8);if(dummy.position.y<3)dummy.position.y+=19;if(dummy.position.x>-16&&dummy.position.x<-4&&dummy.position.z>-11&&dummy.position.z<3&&dummy.position.y<10)dummy.position.x+=20;dummy.rotation.set(t*.2+i,t*.3+i,t*.16);dummy.scale.setScalar(p.s);dummy.updateMatrix();particles.setMatrixAt(i,dummy.matrix);});particles.instanceMatrix.needsUpdate=true;}
   function cutaway(enabled){roofs.forEach(o=>o.visible=!enabled);renderer.shadowMap.needsUpdate=true;}
   // Bake static pieces by material. This turns thousands of tiny draw calls into
   // a few dozen batches while keeping roof cutaways and seasons independent.
   onProgress('整理构件，预备日光');
   scene.updateMatrixWorld(true);
-  function mergeMeshes(list,parent){const groups=new Map();for(const o of list){const key=o.material.uuid+":"+o.castShadow+":"+o.receiveShadow;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(o);}const result=[];for(const objects of groups.values()){const positions=[],normals=[],uvs=[],colors=[];for(const o of objects){const g=o.geometry.index?o.geometry.toNonIndexed():o.geometry.clone();g.applyMatrix4(o.matrixWorld);const p=g.attributes.position,n=g.attributes.normal,uv=g.attributes.uv;for(let i=0;i<p.count;i++){positions.push(p.getX(i),p.getY(i),p.getZ(i));normals.push(n?n.getX(i):0,n?n.getY(i):1,n?n.getZ(i):0);uvs.push(uv?.getX(i)||0,uv?.getY(i)||0);if(o.material.vertexColors)colors.push(...(o.userData.paintTint||[1,1,1]));}g.dispose();o.removeFromParent();}const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));g.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));if(colors.length)g.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));g.computeBoundingSphere();const o=new THREE.Mesh(g,objects[0].material);o.castShadow=objects.some(a=>a.castShadow);o.receiveShadow=true;parent.add(o);result.push(o);}return result;}
+  function mergeMeshes(list,parent){
+    const groups=new Map();
+    for(const o of list){
+      const key=o.material.uuid+":"+o.castShadow+":"+o.receiveShadow;
+      if(!groups.has(key))groups.set(key,[]);groups.get(key).push(o);
+    }
+    const result=[];
+    for(const objects of groups.values()){
+      const positions=[],normals=[],uvs=[],colors=[],grainAxes=[];
+      const timber=['wood','bark'].includes(objects[0].material.userData.paintKind);
+      for(const o of objects){
+        let grainAxis;
+        if(timber){
+          // Preserve the original longest geometric axis before world-space
+          // batching erases each post/beam's local transform.
+          o.geometry.computeBoundingBox();
+          const span=o.geometry.boundingBox.getSize(new THREE.Vector3());
+          const columns=[0,1,2].map(i=>new THREE.Vector3().setFromMatrixColumn(o.matrixWorld,i));
+          const extents=columns.map((v,i)=>v.length()*span.getComponent(i));
+          const longest=extents.indexOf(Math.max(...extents));
+          grainAxis=columns[longest].normalize();
+        }
+        const g=o.geometry.index?o.geometry.toNonIndexed():o.geometry.clone();
+        g.applyMatrix4(o.matrixWorld);
+        const p=g.attributes.position,n=g.attributes.normal,uv=g.attributes.uv,color=g.attributes.color;
+        for(let i=0;i<p.count;i++){
+          positions.push(p.getX(i),p.getY(i),p.getZ(i));
+          normals.push(n?n.getX(i):0,n?n.getY(i):1,n?n.getZ(i):0);
+          uvs.push(uv?.getX(i)||0,uv?.getY(i)||0);
+          if(timber)grainAxes.push(grainAxis.x,grainAxis.y,grainAxis.z);
+          if(o.material.vertexColors){const tint=o.userData.paintTint||[1,1,1];colors.push((color?.getX(i)??1)*tint[0],(color?.getY(i)??1)*tint[1],(color?.getZ(i)??1)*tint[2]);}
+        }
+        g.dispose();o.removeFromParent();
+      }
+      const g=new THREE.BufferGeometry();
+      g.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
+      g.setAttribute('normal',new THREE.Float32BufferAttribute(normals,3));
+      g.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));
+      if(colors.length)g.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));
+      if(timber)g.setAttribute('paintAxis',new THREE.Float32BufferAttribute(grainAxes,3));
+      g.computeBoundingSphere();
+      const o=new THREE.Mesh(g,objects[0].material);o.castShadow=objects.some(a=>a.castShadow);o.receiveShadow=true;parent.add(o);result.push(o);
+    }
+    return result;
+  }
   const excluded=new Set([pond,...deciduous,...snowMeshes,...waterMeshes]);reflectionMeshes.forEach(o=>o.traverse(c=>excluded.add(c)));roofs.forEach(o=>o.traverse(c=>excluded.add(c)));
   const staticMeshes=[];root.traverse(o=>{if(o.isMesh&&!o.isInstancedMesh&&!excluded.has(o))staticMeshes.push(o);});mergeMeshes(staticMeshes,root);await yieldFrame();
   for(const group of roofs){const meshes=[];group.traverse(o=>{if(o.isMesh)meshes.push(o);});mergeMeshes(meshes,group);}await yieldFrame();

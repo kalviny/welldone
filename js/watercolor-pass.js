@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 // A lightweight screen-space pigment pass over a LIVE multisampled scene render.
-// This never samples the target illustration; only a small extracted paper grain.
+// This never samples the scene reference; only an isolated paper-tooth swatch.
 export function createWatercolorPass(renderer) {
   let target, width=0, height=0;
   const uniforms={uFrame:{value:null},uPaper:{value:null},uSize:{value:new THREE.Vector2()},uStrength:{value:1}};
@@ -15,15 +15,21 @@ export function createWatercolorPass(renderer) {
         vec2 px=1./uSize;
         float tooth=texture2D(uPaper,vUv*uSize/512.).r-.5;
         float crossTooth=texture2D(uPaper,vUv.yx*uSize.yx/417.+.31).r-.5;
-        vec2 uv=vUv+vec2(tooth,crossTooth)*px*2.1*uStrength;
+        vec2 uv=vUv+vec2(tooth,crossTooth)*px*2.8*uStrength;
         vec3 center=texture2D(uFrame,uv).rgb;
         vec3 a=texture2D(uFrame,uv+vec2(px.x,0.)*1.25).rgb;
         vec3 b=texture2D(uFrame,uv-vec2(px.x,0.)*1.25).rgb;
         vec3 c=texture2D(uFrame,uv+vec2(0.,px.y)*1.25).rgb;
         vec3 d=texture2D(uFrame,uv-vec2(0.,px.y)*1.25).rgb;
-        vec3 wash=center*.84+(a+b+c+d)*.04;
+        vec3 wash=center*.86+(a+b+c+d)*.035;
         vec3 pooled=min(min(a,b),min(c,d));
-        wash=mix(wash,pooled,.07)* (1.+tooth*.48);
+        // Pigment collects selectively at value boundaries. Broad bright paper
+        // stays open instead of receiving an all-over gray or olive veil.
+        float edge=clamp(length(a-b)+length(c-d),0.,1.);
+        wash=mix(wash,pooled,edge*.14)* (1.+tooth*.37);
+        float luminance=dot(wash,vec3(.2126,.7152,.0722));
+        float dry=smoothstep(.015,.12,tooth)*smoothstep(.48,.88,luminance)*.065;
+        wash=mix(wash,vec3(.965,.95,.91),dry);
         gl_FragColor=vec4(mix(texture2D(uFrame,vUv).rgb,wash,uStrength),1.);
         #include <colorspace_fragment>
       }

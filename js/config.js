@@ -2,9 +2,9 @@
 export const LEVELS = Object.freeze({ courtyard: 4, ground: 5.2, upper: 10.4, lookout: 15.6, eye: 1.65 });
 export const SETTINGS = Object.freeze({ version:'0.170.0', pixelRatio:1.65, mobilePixelRatio:1.3, shadowSize:2048, leafCount:72, cameraFov:49, panoramaFov:41.5 });
 export const SEASONS = {
-  spring:{ canopy:0xdcb4ad, secondary:0xa3b987, grass:0x9ca77d, sky:0xdfe8df, fog:0xd7e0d4, sun:0xfff2db, particle:0xf4c9c5, caption:'春 / PETALS IN THE MOUNTAIN AIR', alt:'春日中庭，浅粉花冠与新绿倒映在水里' },
+  spring:{ canopy:0xf5baa7, secondary:0xa6b98c, grass:0x9ca77d, sky:0xdfe8df, fog:0xd7e0d4, sun:0xfff2db, particle:0xf4c9c5, caption:'春 / PETALS IN THE MOUNTAIN AIR', alt:'春日中庭，浅粉花冠与新绿倒映在水里' },
   summer:{ canopy:0x72915e, secondary:0x91a66a, grass:0x849766, sky:0xd1e2e0, fog:0xc3d6ce, sun:0xfff3d4, particle:0x8ca964, caption:'夏 / A DEEPER SHADE OF GREEN', alt:'夏日中庭，浓绿树荫围绕浅池' },
-  autumn:{ canopy:0xd39766, secondary:0xf0c274, grass:0xc1bca0, sky:0xf7f3eb, fog:0xeeeadd, sun:0xffedcb, particle:0xcb8954, caption:'秋 / A QUIET TURN OF GOLD', alt:'初秋中庭，枫树的暖色树冠映在浅池中' },
+  autumn:{ canopy:0xe8bf70, secondary:0xf6d88b, ochre:0xd9a65e, grass:0xc8ccba, sky:0xf7f3eb, fog:0xeeeadd, sun:0xffedcb, particle:0xcb8954, caption:'秋 / A QUIET TURN OF GOLD', alt:'初秋中庭，枫树的暖色树冠映在浅池中' },
   winter:{ canopy:0xb4b8a8, secondary:0xcbd0bf, grass:0xbdc5b5, sky:0xdde5e4, fog:0xd0dcda, sun:0xf0f4f3, particle:0xf2f3eb, caption:'冬 / THE SOUND OF STILLNESS', alt:'冬日中庭，树枝、薄雪与安静的池水' }
 };
 
@@ -26,8 +26,8 @@ export const WAYPOINTS = [
   {p:[-7,6.85,7],t:[-9,6.7,0],id:'corridor',name:'主回廊',en:'The timber corridor',caption:'回廊连接日常，也连接不同方向的光。',floor:1},
   {p:[-9,6.85,4],t:[-9,6.5,-3]},
   {p:[-6.6,6.5,-3.2],t:[-12.08,5.94,-9.03],id:'tea',name:'茶室',en:'The tea room',caption:'一盏茶的时间，听庭院里的风。',floor:1},
-  {p:[-6.4,6.85,0],t:[1,6,-5]},
-  {p:[-4,6.85,0],t:[1,6,-5],id:'garden',name:'中庭',en:'The inner garden',caption:'一池微光，把天空留在屋里。',floor:1},
+  {p:[-6.4,6.85,0],t:[1,5.76,-5]},
+  {p:[-4,6.85,0],t:[1,5.76,-5],id:'garden',name:'中庭',en:'The inner garden',caption:'一池微光，把天空留在屋里。',floor:1},
   {p:[-4,6.85,-9.5],t:[1,6.7,-5]},
   {p:[4,6.85,-9.5],t:[8,6.8,-5]},
   {p:[4,6.85,-7.4],t:[9,6.7,-4]},

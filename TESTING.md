@@ -1,6 +1,23 @@
 # 验收记录
 
-## 楼梯过渡复核 · 2026-11-18（最新）
+## 春天主殿 Golden · 2026-11-18（最新）
+
+固定主殿 `entrance`、春季、时间 0、1672×941、DPR 1、不裁切。基线 **6.5/10**，三轮独立评分 **6.7 → 7.0 → 6.9/10**。按第三轮独立评审建议，恢复第二轮的精确源码和材质检查点，最终采用 **7.0/10**；尚未达到 8 分标准。第三轮的横格木纹和树冠变平方案仅保留证据，没有追加第四轮。详情见 `notes/spring-main-hall-loop.md` 和 `tests/spring-hall-verdict-*.md`。
+
+- 恢复后重新捕获八个实际视角；主殿和秋日中庭 PNG 分别与第二轮逐字节一致。三轮相机矩阵与 FOV 未变，目标 SHA-256 校验通过。
+- `TEST_URL=http://127.0.0.1:4187/ STYLE_SCENE=entrance STYLE_REPORT=tests/spring-main-hall-verification.json node tests/courtyard-style.cjs`：**41 项通过**，无 WebGL、控制台或 HTTP 错误。全新桌面／窄屏环境覆盖春季固定画面重复一致、四季非空渲染、不同季节调色、茶室懒加载与缓存、路线和性能。
+- `TEST_URL=http://127.0.0.1:4187/ node tests/verify.cjs`：**39 项通过**，无错误或警告；导航、路线支撑、自由观察与返回、地图、四季、材料、榫卯、懒加载和响应式布局正常。报告 `tests/verification.json`。
+- `TEST_URL=http://127.0.0.1:4187/ node tests/capture.cjs`：最终选择的 **18 张响应式 WebP** 已重建。
+- 项目 JavaScript、修改的采集／专项脚本语法检查和 `git diff --check` 通过。已查看最终主殿、八视角、秋季对照及窄屏画面。
+
+| 主殿采样环境 | 平均 FPS | P95 帧耗时 | 绘制调用 |
+|---|---:|---:|---:|
+| 桌面 1672×941，DPR 1 | 60.0 | 16.7 ms | 248 |
+| 窄屏 390×844，设备 DPR 2 | 59.3 | 16.8 ms | 184 |
+
+以上为本机 Chrome 连续 90 帧采样；窄屏使用全新上下文与实际窄屏 LOD，不能替代手机真机 GPU 测试。没有覆盖 Safari/Firefox。其他视角没有对应 golden，未宣称精确匹配。以下保留此前验收历史。
+
+## 楼梯过渡复核 · 2026-11-18
 
 用户截图暴露了停点测试未覆盖的中途画面：看向楼梯仍显示兵具间，以及上楼时提前转向楼板下方。证据保存在 `tests/stair-before.json` 与 `tests/stair-before-contact.png`。
 
@@ -134,3 +151,18 @@
 - 四季庭院和房间的 18 张响应式 WebP 已重新生成。
 
 记录：`tests/paint-verification.json`、`tests/paint-*.png`、最新的 `tests/verification-root.json`、`tests/verification-subpath.json`、`tests/mobile-verification.json`。依赖仍为本地固定版本 Three.js，无新增服务或打包器。
+# 秋日中庭 Golden · 2026-11-18
+
+在 `codex/golden-style-loop` 上完成指定三轮：先基线差异分析，每轮使用新的实现 agent 和独立视觉评审。固定秋季、中庭锚点、DPR 1、动态时间 0，沿用配图管线的 1600×1000 原始画布，居中裁切为 1672×941。第二轮把中庭注视目标的 y 从 6 调整到 5.76；相机位置与路线碰撞体保持原值。目标图 SHA-256 为 `4cf983bf5ec06b3ec0b762b58ce01ea7c323a0467c39488797a2772a06f57556`。
+
+视觉评分是独立评审的主观相似度：归一化基线 **4.8/10**，三轮 **5.7 → 6.0 → 6.6/10**。最终未达到 8 分标准。树冠仍偏实体块面、水面仍偏平滑且有角状倒影、材质缺少目标的选择性颜料层与明亮纸面留白。完整记录见 `tests/courtyard-verdict-baseline.md`、`tests/courtyard-verdict-1.md`、`tests/courtyard-verdict-2.md`、`tests/courtyard-verdict-3.md`。
+
+第二轮正式评审前的实际 WebGL 检查捕获了保留字 `patch` 导致的反射着色器编译失败，已改为 `washPatch` 并重新截图验证。失败证据留在忽略的 `.dream-loop/courtyard-autumn/rounds/round-2-shader-failure/`，未计入正式视觉评分。
+
+- `TEST_URL=http://127.0.0.1:4187/ node tests/courtyard-style.cjs`：37 项通过，无控制台、WebGL 或 HTTP 错误。全新桌面与窄屏上下文的固定中庭截图可逐字节重复，四季画面非空且调色不同，茶室仍懒加载并缓存。
+- 桌面 1672×941、DPR 1：山路约 60.0 FPS，中庭约 58.7 FPS；窄屏 390×844、DPR 2：山路约 60.0 FPS，中庭约 58.7 FPS。均为本机 Chrome 90 帧采样；窄屏采用实际初始化的窄屏 LOD，不能代替真机 GPU 测试。
+- `TEST_URL=http://127.0.0.1:4187/ node tests/verify.cjs`：39 项通过，无错误或警告。覆盖路线支撑、导航、自由观察与返回、楼层地图、四季、材料与榫卯章节、懒加载和响应式布局。
+- 各轮十个代表视角均已采集，路线碰撞为零。其他视角用于风格一致性与退化检查，没有对应 golden，未宣称精确视觉匹配。
+- `TEST_URL=http://127.0.0.1:4187/ node tests/capture.cjs`：重建 18 张真实场景响应式 WebP 配图。
+
+目标图、每轮截图、叠图、差异图、运行 JSON、实现笔记和源码快照保存在忽略的 `.dream-loop/courtyard-autumn/`。概览见 `notes/autumn-courtyard-loop.md`。

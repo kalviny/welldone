@@ -1,0 +1,320 @@
+{
+  "url": "http://127.0.0.1:4187/",
+  "checks": [
+    {
+      "name": "desktop: tea materials stay lazy at opening",
+      "passed": true
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop: route remains clear",
+      "passed": true,
+      "detail": {
+        "samples": 12001,
+        "collisions": []
+      }
+    },
+    {
+      "name": "desktop: approach actively renders",
+      "passed": true,
+      "detail": 364
+    },
+    {
+      "name": "desktop: approach browser sample exceeds 30 FPS",
+      "passed": true,
+      "detail": 60.00400026668446
+    },
+    {
+      "name": "desktop: garden actively renders",
+      "passed": true,
+      "detail": 364
+    },
+    {
+      "name": "desktop: garden browser sample exceeds 30 FPS",
+      "passed": true,
+      "detail": 58.69692819409118
+    },
+    {
+      "name": "desktop: fixed courtyard frame captures repeat exactly",
+      "passed": true
+    },
+    {
+      "name": "desktop: spring framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "desktop: spring applied",
+      "passed": true
+    },
+    {
+      "name": "desktop: summer framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "desktop: summer applied",
+      "passed": true
+    },
+    {
+      "name": "desktop: autumn framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "desktop: autumn applied",
+      "passed": true
+    },
+    {
+      "name": "desktop: winter framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "desktop: winter applied",
+      "passed": true
+    },
+    {
+      "name": "desktop: all seasons retain different foliage palettes",
+      "passed": true
+    },
+    {
+      "name": "desktop: tea texture loads remain cached",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea materials stay lazy at opening",
+      "passed": true
+    },
+    {
+      "name": "narrow: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "narrow: route remains clear",
+      "passed": true,
+      "detail": {
+        "samples": 12001,
+        "collisions": []
+      }
+    },
+    {
+      "name": "narrow: approach actively renders",
+      "passed": true,
+      "detail": 364
+    },
+    {
+      "name": "narrow: approach browser sample exceeds 30 FPS",
+      "passed": true,
+      "detail": 59.99999999999999
+    },
+    {
+      "name": "narrow: garden actively renders",
+      "passed": true,
+      "detail": 364
+    },
+    {
+      "name": "narrow: garden browser sample exceeds 30 FPS",
+      "passed": true,
+      "detail": 58.70075658752934
+    },
+    {
+      "name": "narrow: fixed courtyard frame captures repeat exactly",
+      "passed": true
+    },
+    {
+      "name": "narrow: spring framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "narrow: spring applied",
+      "passed": true
+    },
+    {
+      "name": "narrow: summer framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "narrow: summer applied",
+      "passed": true
+    },
+    {
+      "name": "narrow: autumn framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "narrow: autumn applied",
+      "passed": true
+    },
+    {
+      "name": "narrow: winter framebuffer is nonblank",
+      "passed": true
+    },
+    {
+      "name": "narrow: winter applied",
+      "passed": true
+    },
+    {
+      "name": "narrow: all seasons retain different foliage palettes",
+      "passed": true
+    },
+    {
+      "name": "narrow: tea texture loads remain cached",
+      "passed": true
+    },
+    {
+      "name": "no WebGL, console or HTTP errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "metrics": [
+    {
+      "label": "desktop",
+      "id": "approach",
+      "width": 1672,
+      "height": 941,
+      "dpr": 1,
+      "fps": 60.00400026668446,
+      "p95Ms": 16.799999999999727,
+      "rendererFrames": 364,
+      "stats": {
+        "calls": 323,
+        "triangles": 3182854,
+        "geometries": 373,
+        "textures": 18
+      }
+    },
+    {
+      "label": "desktop",
+      "id": "garden",
+      "width": 1672,
+      "height": 941,
+      "dpr": 1,
+      "fps": 58.69692819409118,
+      "p95Ms": 16.700000000000273,
+      "rendererFrames": 364,
+      "stats": {
+        "calls": 166,
+        "triangles": 3043414,
+        "geometries": 373,
+        "textures": 22
+      }
+    },
+    {
+      "label": "narrow",
+      "id": "approach",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "fps": 59.99999999999999,
+      "p95Ms": 16.799999999999955,
+      "rendererFrames": 364,
+      "stats": {
+        "calls": 307,
+        "triangles": 1828366,
+        "geometries": 372,
+        "textures": 18
+      }
+    },
+    {
+      "label": "narrow",
+      "id": "garden",
+      "width": 390,
+      "height": 844,
+      "dpr": 2,
+      "fps": 58.70075658752934,
+      "p95Ms": 16.799999999999727,
+      "rendererFrames": 364,
+      "stats": {
+        "calls": 164,
+        "triangles": 1724746,
+        "geometries": 372,
+        "textures": 22
+      }
+    }
+  ],
+  "seasons": [
+    {
+      "label": "desktop",
+      "season": "spring",
+      "file": "tests/courtyard-desktop-spring.png",
+      "mean": [
+        181.0923340740025,
+        178.44147590621807,
+        150.5084107052967
+      ]
+    },
+    {
+      "label": "desktop",
+      "season": "summer",
+      "file": "tests/courtyard-desktop-summer.png",
+      "mean": [
+        174.80264111273257,
+        173.6902072772018,
+        143.76011534608912
+      ]
+    },
+    {
+      "label": "desktop",
+      "season": "autumn",
+      "file": "tests/courtyard-desktop-autumn.png",
+      "mean": [
+        196.5024323863954,
+        188.292256913901,
+        163.06287531334374
+      ]
+    },
+    {
+      "label": "desktop",
+      "season": "winter",
+      "file": "tests/courtyard-desktop-winter.png",
+      "mean": [
+        192.91413173911496,
+        187.0437975735881,
+        166.92255960522502
+      ]
+    },
+    {
+      "label": "narrow",
+      "season": "spring",
+      "file": "tests/courtyard-narrow-spring.png",
+      "mean": [
+        172.74005491037957,
+        177.3656197015709,
+        147.82306056143796
+      ]
+    },
+    {
+      "label": "narrow",
+      "season": "summer",
+      "file": "tests/courtyard-narrow-summer.png",
+      "mean": [
+        164.25142624946287,
+        170.3240305728911,
+        137.87385356153325
+      ]
+    },
+    {
+      "label": "narrow",
+      "season": "autumn",
+      "file": "tests/courtyard-narrow-autumn.png",
+      "mean": [
+        197.92333403454643,
+        190.62490493168565,
+        160.16299968175713
+      ]
+    },
+    {
+      "label": "narrow",
+      "season": "winter",
+      "file": "tests/courtyard-narrow-winter.png",
+      "mean": [
+        190.28686448067978,
+        189.2978951021164,
+        172.9277049295281
+      ]
+    }
+  ],
+  "status": "passed"
+}
