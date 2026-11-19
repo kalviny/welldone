@@ -30,9 +30,9 @@
       "name": "pending guided scroll resumes at original bookmark",
       "passed": true,
       "detail": {
-        "progress": 0.5892776724063126,
-        "desired": 0.6326041666666666,
-        "scroll": 6073
+        "progress": 0.5891767299911806,
+        "desired": 0.6325,
+        "scroll": 6072
       }
     },
     {

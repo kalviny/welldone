@@ -3,10 +3,9 @@
     "single-finger local look",
     "two-finger zoom",
     "touch return to walk",
-    "mobile architecture layout",
-    "mobile materials layout",
-    "mobile joinery layout",
-    "mobile rooms layout"
+    "mobile approach viewer layout",
+    "mobile tea viewer layout",
+    "mobile lookout viewer layout"
   ],
   "errors": [],
   "status": "passed"
